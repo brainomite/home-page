@@ -1,47 +1,11 @@
 ---
 layout: page
-title: Thank You!
-sitemap: false
+title: About Me
+sitemap: true
 ---
 
-Thank you for buying the PRO version of Hydejack! 🎉
+Hi, I'm Aaron a software engineer with experience in JavaScript, React, Ruby on Rails and Node.js. I also have a background in systems administration. From a child as early as 5th grade I have always demonstrated a love for all things computer related. I began repairing computers for my friends starting in 7th grade.
 
-More than one year ago I was looking for a blogging platform but couldn't find it:
-One that would let me write posts in markdown with my own editor,
-one that didn't look awful buy modern design standards, and one that felt snappy on a mobile phone.
-That and more is now Hydejack. I hope you enjoy it [as much as I do](https://qwtel.com/).
+My journey to where I am today began in High School where I learned Visual Basic 5 in 10th-grade computer class. In 12th grade, I was given the opportunity to take and pass the Computer Science AP course. In college, I continued to take computer-related courses. After college, I went out to acquire industry certifications in Microsoft operating systems. From there I landed the job that I held for 15 years.
 
-## First Steps
-Start by reading the [Documentation]{:.heading.flip-title}.
-Specifically, the chapters below should be relevant now:
-
-* [Install]{:.heading.flip-title} --- How to install and run Hydejack.
-* [Config]{:.heading.flip-title} --- Once Jekyll is running you can start with basic configuration.
-{:.related-posts.faded}
-
-After you've familiarized yourself with Hydejack, you can delete the following folders and files
-containing example content:
-
-~~~
-├── _featured_categories
-│   └── example.md
-├── _projects
-│   └── *
-├── docs
-├── example
-├── licenses
-├── assets
-│   └── img
-│       ├── blog
-│       ├── docs
-│       └── projects
-├── CHANGELOG.md
-├── forms-by-example.md
-├── LICENSE.md
-└── NOTICE.md
-~~~
-
-[documentation]: docs/README.md
-[install]: docs/install.md
-[upgrade]: docs/upgrade.md
-[config]: docs/config.md
+Today I'm continuing my journey, leaving systems administration behind and moving forward having expanded my horizons with more tools recently while attending App Academy. I am looking forward to joining a firm where I can roll up my sleeves and get cracking on making the firm a better one.
