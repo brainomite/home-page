@@ -2,6 +2,7 @@
 layout: page
 title: About Me
 sitemap: true
+cover: true
 ---
 
 Hi, I'm Aaron a software engineer with experience in JavaScript, React, Ruby on Rails and Node.js. I also have a background in systems administration. From a child as early as 5th grade I have always demonstrated a love for all things computer related. I began repairing computers for my friends starting in 7th grade.
