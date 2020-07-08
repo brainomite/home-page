@@ -11,10 +11,12 @@ Appropriate credit as per Creative Commons licenses.
 | Work                                               | License        | Changes              |
 | :------------------------------------------------- | :------------- | :------------------- |
 | Photo by [Jeremy Bishop][jb]                       | [Unsplash]     | Liquify filter, blur |
+| Photo by [Markus Spiske][ms]                       | [Unsplash]     | Crop, resize         |
 | [IcoMoon Icons Free Version][11] by [Keyamoon][12] | [CC-BY-SA-4.0] | None                 |
 | [Touch-161562.svg][41]                             | [CC0-1.0]      | Composition          |
 
 [jb]: https://unsplash.com/photos/1braZySlEKA
+[ms]: https://unsplash.com/photos/KeFyYzxqmH0
 [11]: https://icomoon.io/#icons-icomoon
 [12]: http://keyamoon.com/
 [41]: https://commons.wikimedia.org/wiki/File:Touch-161562.svg
