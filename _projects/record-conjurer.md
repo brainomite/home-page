@@ -3,11 +3,11 @@ layout: project
 title: Record Conjurer
 date: 6 Oct 2018
 image:
-  path: /assets/projects/recordconjurer@0,25x.jpg
+  path: /assets/img/projects/recordconjurer@0,25x.jpg
 srcset:
-  1920w: /assets/projects/recordconjurer.jpg
-  960w: /assets/projects/recordconjurer@0,5x.jpg
-  480w: /assets/projects/recordconjurer@0,25x.jpg
+  1920w: /assets/img/projects/recordconjurer.jpg
+  960w: /assets/img/projects/recordconjurer@0,5x.jpg
+  480w: /assets/img/projects/recordconjurer@0,25x.jpg
 caption: Handcrafted custom ORM for Ruby
 description: >
   Handcrafted custom ORM inspired by Ruby on Rails' Active Record.

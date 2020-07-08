@@ -3,11 +3,11 @@ layout: project
 title: WeMeet
 date: 25 Oct 2018
 image:
-  path: /assets/projects/wemeet@0,25x.png
+  path: /assets/img/projects/wemeet@0,25x.png
 srcset:
-  1920w: /assets/projects/wemeet.png
-  960w: /assets/projects/wemeet@0,5x.png
-  480w: /assets/projects/wemeet@0,25x.png
+  1920w: /assets/img/projects/wemeet.png
+  960w: /assets/img/projects/wemeet@0,5x.png
+  480w: /assets/img/projects/wemeet@0,25x.png
 caption: Website inspired by meetup.com
 description: >
   WeMeet is a Single Page Application inspired by meetup.com.
