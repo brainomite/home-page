@@ -15,7 +15,7 @@ description: >
 links:
   - title: Live
     url: https://marketplace.visualstudio.com/items?itemName=aaronYoung.classy-react&ssr=false#overview
-  - title: Source
+  - title: GitHub Source Code
     url: https://github.com/brainomite/classy-react
 featured: false
 ---

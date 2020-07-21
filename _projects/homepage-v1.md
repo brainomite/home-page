@@ -14,7 +14,7 @@ description: >
 links:
   - title: Live
     url: https://brainomite.github.io/original-home-page/
-  - title: Source
+  - title: GitHub Source Code
     url: https://github.com/brainomite/original-home-page
 featured: false
 ---

@@ -15,7 +15,7 @@ description: >
 links:
   - title: Live
     url: https://mutualaid.nyc/i-need-help/#hotline
-  - title: Source
+  - title: GitHub Source Code
     url: https://github.com/MutualAidNYC/mutual-aid-call-center
 featured: false
 ---

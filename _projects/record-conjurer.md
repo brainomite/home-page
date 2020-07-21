@@ -13,7 +13,7 @@ description: >
   Handcrafted custom ORM inspired by Ruby on Rails' Active Record.
   It uses metaprogramming techniques to allow for dynamic helper functions allowing for DRYer code.
 links:
-  - title: Source
+  - title: GitHub Source Code
     url: https://github.com/brainomite/record-conjurer
 featured: false
 ---

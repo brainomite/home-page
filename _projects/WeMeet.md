@@ -15,7 +15,7 @@ description: >
 links:
   - title: Demo
     url: https://wemeet.aaronyoung.io/
-  - title: Source
+  - title: GitHub Source Code
     url: https://github.com/brainomite/we-meet/
 featured: false
 ---

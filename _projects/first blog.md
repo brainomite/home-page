@@ -14,7 +14,7 @@ description: >
 links:
   - title: Live
     url: https://old-blog.aaronyoung.io/
-  - title: Source
+  - title: GitHub Source Code
     url: https://github.com/brainomite/my-blog
 featured: false
 ---
