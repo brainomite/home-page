@@ -10,7 +10,7 @@ Appropriate credit as per Creative Commons licenses.
 
 | Work                                               | License        | Changes      |
 | :------------------------------------------------- | :------------- | :----------- |
-| Photo by [Jonatan Pie][jp]                         | [Unsplash]     | none         |
+| Photo by [Jonatan Pie][jp]                         | [Unsplash]     | None         |
 | Photo by [Markus Spiske][ms]                       | [Unsplash]     | Crop, resize |
 | Photo by [William Krause][wk]                      | [Unsplash]     | Crop, resize |
 | [IcoMoon Icons Free Version][11] by [Keyamoon][12] | [CC-BY-SA-4.0] | None         |
