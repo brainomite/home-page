@@ -59,6 +59,8 @@ menu:
     url: /blog/
   - title: Résumé
     url: /assets/Resume-Aaron_Young.pdf
+  - title: Schedule with me
+    url: /calendly/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
