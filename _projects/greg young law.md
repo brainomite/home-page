@@ -3,11 +3,11 @@ layout: project
 title: Greg Young Law
 date: 25 Jul 2020
 image:
-  path: /assets/img/projects/gregyounglaw@0,25x.png
+  path: /assets/img/projects/gregyounglaw@0,25x.jpg
 srcset:
-  1920w: /assets/img/projects/gregyounglaw.png
-  960w: /assets/img/projects/gregyounglaw@0,5x.png
-  480w: /assets/img/projects/gregyounglaw@0,25x.png
+  1920w: /assets/img/projects/gregyounglaw.jpg
+  960w: /assets/img/projects/gregyounglaw@0,5x.jpg
+  480w: /assets/img/projects/gregyounglaw@0,25x.jpg
 caption: A webpage done professionally for Greg Young Law hosted on Netlify.
 description: >
   A responsive wep page created for Greg Young Law. I hosted this on Netlify.
