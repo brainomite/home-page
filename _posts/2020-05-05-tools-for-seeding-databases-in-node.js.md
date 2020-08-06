@@ -45,4 +45,4 @@ The last tool I want to mention is [Cartoon Avatars](https://www.npmjs.com/packa
 
 ![Cartoon avatar of a woman](/assets/img/posts/2020-05-05-tools-for-seeding-databases-in-node.js/cartoon-avatar-woman.png)
 
-This post has been cross-posted on [Medium](https://medium.com/@brainomite/the-case-for-system-backups-in-addition-to-git-or-another-vcs-1f3a54dc5ec5)
+This post has been cross-posted on [Medium](https://medium.com/@brainomite/tools-for-seeding-databases-in-node-js-72fb2f6c7320)
