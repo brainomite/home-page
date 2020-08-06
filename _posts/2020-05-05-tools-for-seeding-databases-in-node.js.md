@@ -11,7 +11,7 @@ There are two categories of tools I'm listing. A data-oriented tool, and a few a
 
 ---
 
-Starting with the data-oriented tool, an NPM package, [Chance](https://www.npmjs.com/package/chance). I love the wide variety of data that this tool can generate. Need to randomly generate an address? Chance can do it. Need random sentences? No problem. There are many different things that Chance can generate. I strongly suggest you check their [documentation](https://chancejs.com/index.html) for the wide, and I do mean wide, variety of things it can generate.
+Starting with the data-oriented tool, an NPM package, [Chance](https://www.npmjs.com/package/chance). I love variety of data that this tool can generate. Need to randomly generate an address? Chance can do it. Need random sentences? No problem. There are many different things that Chance can generate. I strongly suggest you check their [documentation](https://chancejs.com/index.html) for the wide, and I do mean wide, variety of things it can generate.
 
 What I find helpful, especially when using Chance in code tests, you can set a seed value for the psuedo-random generator that Chance uses. This way every time you run your program, as long as you invoke Chance's functions in the same order, you will get repeatable results.
 
