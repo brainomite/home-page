@@ -10,7 +10,7 @@ srcset:
   480w: /assets/img/projects/gregyounglaw@0,25x.jpg
 caption: A webpage done professionally for Greg Young Law hosted on Netlify.
 description: >
-  A responsive wep page created for Greg Young Law. I hosted this on Netlify.
+  A responsive web page created for Greg Young Law. I hosted this on Netlify.
 links:
   - title: Live
     url: https://gregyounglaw.com/
