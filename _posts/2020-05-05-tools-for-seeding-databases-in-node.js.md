@@ -4,6 +4,7 @@ title: Tools for Seeding Databases in Node.js
 # description: >
 # Multiple tools for seeding a database for projects, personal and or professional.
 sitemap: true
+comments: true
 ---
 
 In this post, I'll be discussing some tools I've found and used for different projects of mine. Why would we want to seed a database? There are typically a couple of reasons to seed a database. First, having data in your database is typically helpful for tests that need to hit the database. The second reason to seed a database is to show off a project, for example, a portfolio piece or an internal demonstration of something you developed for your company.
@@ -13,7 +14,7 @@ There are two categories of tools I'm listing. A data-oriented tool, and a few a
 
 Starting with the data-oriented tool, an NPM package, [Chance](https://www.npmjs.com/package/chance). I love the variety of data that this tool can generate. Need to randomly generate an address? Chance can do it. Need random sentences? No problem. There are many different things that Chance can generate. I strongly suggest you check their [documentation](https://chancejs.com/index.html) for the wide, and I do mean wide, variety of things it can generate.
 
-What I find helpful, especially when using Chance in code tests, you can set a seed value for the psuedo-random generator that Chance uses. This way every time you run your program, as long as you invoke Chance's functions in the same order, you will get repeatable results.
+What I find helpful, especially when using Chance in code tests, you can set a seed value for the pseudorandom generator that Chance uses. This way every time you run your program, as long as you invoke Chance's functions in the same order, you will get repeatable results.
 
 There is, however, one feature so far that I don't like. That is Chance's ability to generate avatar URLs. When invoked, it generates random Gravatar URLs that typically do not result in a meaningful avatar but rather the Gravatar logo as seen here below.
 

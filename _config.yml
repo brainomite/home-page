@@ -180,7 +180,7 @@ google_analytics: UA-155179399-2
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-# disqus:                <username>
+disqus: aaronyoung-dev
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
@@ -380,6 +380,8 @@ jekyll_compose:
         social media previews, etc.
       image:
         path: /assets/img/sidebar-bg.jpg
+      values:
+        comments: true
     projects:
       layout: project
       description: >
