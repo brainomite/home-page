@@ -23,7 +23,7 @@ Appropriate credit as per Creative Commons licenses.
 [12]: http://keyamoon.com/
 [41]: https://commons.wikimedia.org/wiki/File:Touch-161562.svg
 
-<!-- [mit]: licenses/MIT.md -->
+<!-- [mit]: licenses/MIT.md  -->
 <!-- [gpl-3.0]: licenses/GPL-3.0.md -->
 <!-- [apache-2.0]: licenses/Apache-2.0.md -->
 <!-- [w3c-20150513]: licenses/W3C-20150513.md -->
