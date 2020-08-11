@@ -30,30 +30,40 @@ default:site.hydejack.no_third_column | default:false %}
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
+  />
   <div
     class="columns contact hr-bottom {% unless no_third_column %}columns-break{% endunless %}"
   >
     {% include pro/resume/basics.html %} {% include pro/resume/profiles.html %}
     <div id="marquee-container" class="column">
       <div class="marquee" id="resume-marquee"">
-        <ul class="marquee-content">
-          <li><i class="fab fa-github"></i></li>
-          <li><i class="fab fa-codepen"></i></li>
-          <li><i class="fab fa-free-code-camp"></i></li>
-          <li><i class="fab fa-dev"></i></li>
-          <li><i class="fab fa-react"></i></li>
-          <li><i class="fab fa-vuejs"></i></li>
-          <li><i class="fab fa-angular"></i></li>
-          <li><i class="fab fa-node"></i></li>
-          <li><i class="fab fa-wordpress"></i></li>
-          <li><i class="fab fa-aws"></i></li>
-          <li><i class="fab fa-docker"></i></li>
-          <li><i class="fab fa-android"></i></li>
-        </ul>
-      </div>
+      <ul class="marquee-content">
+        <li><i class="fab fa-aws"></i></li>
+        <li><i class="fab fa-github"></i></li>
+        <li><i class="devicon-babel-plain"></i></li>
+        <li><i class="fab fa-css3-alt"></i></li>
+        <li><i class="devicon-express-original"></i></li>
+        <li><i class="fab fa-free-code-camp"></i></li>
+        <li><i class="devicon-git-plain"></i></li>
+        <li><i class="devicon-github-plain"></i></li>
+        <li><i class="devicon-heroku-original-wordmark"></i></li>
+        <li><i class="devicon-html5-plain-wordmark"></i></li>
+        <li><i class="devicon-javascript-plain"></i></li>
+        <li><i class="devicon-mysql-plain-wordmark"></i></li>
+        <li><i class="devicon-nodejs-plain"></i></li>
+        <li><i class="devicon-postgresql-plain"></i></li>
+        <li><i class="devicon-rails-plain"></i></li>
+        <li><i class="devicon-react-original-wordmark"></i></li>
+        <li><i class="devicon-ruby-plain"></i></li>
+        <li><i class="devicon-sequelize-plain"></i></li>
+      </ul>
     </div>
-    <script src="marquee.js"></script>
   </div>
+  <script src="marquee.js"></script>
+  <!-- </div> -->
 
   {% comment %} {% unless page.no_buttons %}
   <div class="mt2 screen-only">
