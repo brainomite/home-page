@@ -59,9 +59,9 @@ author1:
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    # download:        /assets/Resume-Aaron_Young.pdf
     # keybase          <username>
     medium: brainomite
+    download: /assets/Resume-Aaron_Young.pdf
 # Another author (optional)
 author2:
   name: <firtname> <lastname>
