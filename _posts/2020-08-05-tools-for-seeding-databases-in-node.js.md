@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Tools for Seeding Databases in Node.js
-# description: >
-# Multiple tools for seeding a database for projects, personal and or professional.
+description: >
+  Multiple tools for seeding a database for projects, personal and or professional.
 sitemap: true
 comments: true
 ---
