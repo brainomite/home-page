@@ -10,7 +10,7 @@ comments: true
 - this unordered seed list will be replaced by the toc
 {:toc}
 
-# What and why?
+## What and why?
 
 A short description. [Babel][1] is a JavaScript tool that compiles code into JavaScript that is compatible with one or more specified environments. While Babel, can work with input languages other than JavaScript, in this article, I will be focusing on JavaScript to JavaScript compiling.
 
@@ -18,14 +18,14 @@ Why would anyone want to go from one language, back to the same language? That i
 
 Some developers will check [Can I Use][3] religiously to see if they can use a new feature they heard about only to be dismayed that there are people using browsers (or a Node environment) that doesn't support it. These developers get left behind in their skills. They can't practice the new stuff because their target environment(s) have yet to be updated. This is where Babel comes in. You can instruct Babel, to take in a file with all the new features that have been in the latest released specs, and have it output a new file that will support the targeted environments. Babel uses several techniques from implementing polyfills to code substitutions.
 
-# Some Examples
+## Some Examples
 
 For the following examples, I opted to have Babel target the browsers and their versions that make up 95% of the active browsers as tabulated by Can I Use's [browser usage table][4].
 
 The environment selection is quite flexible, we can target a NodeJS, Electron, or browser environment. Within those, we can target specific versions. Specifically for browsers, we can target base on usage percentages.
 {:.note}
 
-## Example 1: Array destructuring with the spread operator, and Object destructuring
+### Example 1: Array destructuring with the spread operator, and Object destructuring
 
 in: example1.js
 
@@ -65,7 +65,7 @@ var theName = person.name,
 console.log("".concat(theName, " is ").concat(age, " years old!")); // > David is 21 years old!
 ```
 
-## Example 2: Function using object destructuring with default value as an input
+### Example 2: Function using object destructuring with default value as an input
 
 in: example2.js
 
