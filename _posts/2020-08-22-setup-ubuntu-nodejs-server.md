@@ -331,7 +331,7 @@ If you've comments, as always please leave them below.
 [9]: https://github.com/keymetrics/pm2-logrotate#configure
 [10]: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-20-04
 [11]: https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
-[12]: http://aaronyoung.dev/blog/2020-08-22-setup-ubuntu-nodejs-server/#setup-a-non-root-user-with-sudo-privileges
+[12]: #setup-a-non-root-user-with-sudo-privileges
 [13]: https://www.linode.com/
 [14]: https://aws.amazon.com/ec2/
 [15]: https://www.digitalocean.com/
