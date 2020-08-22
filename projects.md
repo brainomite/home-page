@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Projects
+title: Portfolio
 show_collection: projects
 featured: true
 no_groups: true
