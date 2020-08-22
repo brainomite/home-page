@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I Set Up a Server To Host Multiple Node.JS Projects & Save Money
+title: How I Set Up a Server To Host Multiple Node.JS Projects & Save $54+ Per App Annually
 description: >
   We'll go through the steps of setting up a single Ubuntu 20.04 server to host
   multiple Node.JS projects in order to save money.
@@ -16,14 +16,14 @@ comments: true
 I have built several small lightly used Node.js projects on [Heroku][4]. I want
 several of them to not have the limitations of a free server, namely the fact it
 sleeps after 30 minutes & the ability to have free SSL certificates. There are a
-few other gotchas with Heroku in general. According to their [pricing][5], I'd
+few other gotchas with Heroku in general. According to their pricing, I'd
 need to get, at minimum, a 'Hobby' server, one for every app. Each one costs $7
 a month plus taxes, this equates to more than $84 a year for each app.
 
 I decided that I can do better. I went to [VULTR][6]'s site and looked
-into their servers, which they call [Cloud Compute][7]. Their cheapest server
+into their servers, which they call Cloud Compute. Their cheapest server
 (and we can upgrade after deployment if needed), according to their
-[pricing][8], is $2.50 a month or $30 a year. When you add the fact that,
+pricing, is $2.50 a month or $30 a year. When you add the fact that,
 I can now host multiple apps on one server, the savings get greater with each
 app hosted.
 
@@ -42,7 +42,7 @@ A few requirements before we dive right in.
 
 With that being said, you can use any server running Ubuntu 20.04 x64 should you
 not wish to use VULTR, some other options include [Linode][13],
-[Amazon EC2][14], [DigitalOcean][15] and many more. Just skip the 'Steps to
+[Amazon EC2][14], [DigitalOcean][4] and many more. Just skip the 'Steps to
 deploy a new Cloud Compute server' section deploy the server elsewhere then
 start with [Setup a non-root user with sudo privilege][12] .
 {:.note}
@@ -323,15 +323,11 @@ If you've comments, as always please leave them below.
 [1]: https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/
 [2]: https://letsencrypt.org/
 [3]: https://nodejs.org/en/download/
-[4]: https://www.heroku.com/
-[5]: https://www.heroku.com/pricing
-[6]: https://www.vultr.com/
-[7]: https://www.vultr.com/products/cloud-compute/
-[8]: https://www.vultr.com/products/cloud-compute/#pricing
+[4]: https://m.do.co/c/7b7057283d32
+[6]: https://www.vultr.com/?ref=8663193
 [9]: https://github.com/keymetrics/pm2-logrotate#configure
 [10]: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-20-04
 [11]: https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
 [12]: #setup-a-non-root-user-with-sudo-privileges
 [13]: https://www.linode.com/
 [14]: https://aws.amazon.com/ec2/
-[15]: https://www.digitalocean.com/
