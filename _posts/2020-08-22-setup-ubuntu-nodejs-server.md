@@ -2,7 +2,8 @@
 layout: post
 title: How I Set Up a Server To Host Multiple Node.JS Projects & Save Money
 description: >
-  We'll go through the steps of setting up a Ubuntu 20.04 server to host multiple Node.JS projects in order to save money.
+  We'll go through the steps of setting up a single Ubuntu 20.04 server to host
+  multiple Node.JS projects in order to save money.
 sitemap: true
 comments: true
 ---
@@ -19,75 +20,85 @@ few other gotchas with Heroku in general. According to their [pricing][5], I'd
 need to get, at minimum, a 'Hobby' server, one for every app. Each one costs $7
 a month plus taxes, this equates to more than $84 a year for each app.
 
-I decided that I can do better. I went to [DigitalOcean][6]'s site and looked
-into their servers, which they call [droplets][7]. Their cheapest droplet (and
-we can upgrade after deployment if needed), according to their [pricing][8], is
-$5 a month or $60 a year. When you add the fact that, I can now host multiple
-apps on one server, the savings get greater with each app hosted.
-
-With that being said, you can use any server running Ubuntu 20.04 should you
-not wish to use DigitalOcean. Just skip the 'Steps to deploy a new droplet'
-section.
-{:.note}
-
+I decided that I can do better. I went to [VULTR][6]'s site and looked
+into their servers, which they call [Cloud Compute][7]. Their cheapest server
+(and we can upgrade after deployment if needed), according to their
+[pricing][8], is $2.50 a month or $30 a year. When you add the fact that,
+I can now host multiple apps on one server, the savings get greater with each
+app hosted.
 
 A few requirements before we dive right in.
 *  Apps will need to support a single Node.js version, at the time of writing it
-   is 12.18.3. To check your version once the server is setup simply run `node -v`
+   is 12.18.3. To check your version once the server is setup simply run
+   `node -v`
+*  You need to know the difference between IPv4 and IPv6
 *  You need to know how to set up DNS. The method is different for each DNS
    host
 *  Each app needs to have its own apex domain, subdomain or combinations
    thereof assigned to it
 *  All apps should be listening for the PORT environment variable
 *  In the instructions, wherever you see `john` replace it with the non-root
-   user you'll be creating
+   user you'll be creating and using
 
+With that being said, you can use any server running Ubuntu 20.04 x64 should you
+not wish to use VULTR, some other options include [Linode][13],
+[Amazon EC2][14], [DigitalOcean][15] and many more. Just skip the 'Steps to
+deploy a new Cloud Compute server' section deploy the server elsewhere then
+start with [Setup a non-root user with sudo privilege][12] .
+{:.note}
 
-## Deploy a DigitalOcean Droplet (Virtual Private Server) and initially set it up
+## Deploy a server and initially set it up
 
-### Steps to deploy a new droplet:
+### Steps to deploy a new VULTR Cloud Compute Server:
 
-1.  Login to DigitalOcean
-2.  In top right corner, click 'Create' then 'Droplets'
-3.  Make sure Ubuntu is selected with '20.04 (LTS) x64'
-4.  Because we can always scale up is needed I personally selected the cheapest
-    (scroll to the left) basic server, which is $5 at the time of this post
-5.  Choose a datacenter that makes sense for your region
-6.  Enable IPv6, and Monitoring in Additional options
-7.  If you know about, and have an SSH key, use that for auth, otherwise setup a
-    password
-8.  Today we are only deploying 1 droplet
+1.  Login to VULTR
+2.  In top right corner, click the circle with a plus sign then 'Deploy New Serve'
+3.  Because we can always scale up is needed I personally selected the cheapest
+    type of server Cloud Compute server
+4.  Choose a datacenter region that makes sense for your region
+5.  Make sure Ubuntu is selected with '20.04 (LTS) x64'
+6.  For the server size, I chose the cheapest which is $2.50 a month. If I ever
+    need more resources, I can scale up.
+7.  Optionally, but suggested, enable auto backups (additional cost)
+8.  If you know about, and have an SSH key, use that for auth. Either way you
+    will be able to find root's password where you can manage the server on
+    VULTR's site.
 9.  Give the droplet a clever hostname
-10. Optionally enable backups (additional cost)
-11. Click 'Create Droplet'
+10. Optionally give the server an alternate label to find it on VULTR's site
+11.  Today we are only deploying 1 server
+12. Click 'Deploy now'
+13. Log into your server using root over SSH (if you don't know how see
+    [this article][1]). You will find the IP address info when you go to manage
+    your Cloud Compute server's settings on VULTR's site.
+14. To update the list of packages run `apt update`
+15. To upgrade out of date items run `apt upgrade`
 
 ### Setup a non-root user with sudo privileges
 
 For the following steps, I will be using 'john' as a user, substitute it for whatever you want.
 {:.note}
 
-1.  Log into your server using root over SSH (if you don't know how see
-    [this article][1]). You will find the IP address info when you go to manage
-    your droplet's settings on DigitalOcean's site.
-2.  Run the command `adduser john` and fill in the answers, if you want
-3.  Run the command `usermod -aG sudo john`
+1.  Log into root via SSH if you are not already connected
+2.  Lets set a temp variable to make the next bunch of steps `newuser=john`
+3.  Run the command `adduser $newuser` and fill in the answers, if you want
+4.  Run the command `usermod -aG sudo $newuser`
 
 #### Optional 1 - If you wish to secure the server via SSH keys
 
-1. Run the following set of commands to set up SSH for the new user account (remember to replace john with the appropriate user)
+1. Run the following set of commands to set up SSH for the new user account
 ```
-mkdir -p /home/john/.ssh
-touch /home/john/.ssh/authorized_keys
-chmod -R go= /home/john/.ssh
-chown -R john:john /home/john/.ssh
-nano /home/john/.ssh/authorized_keys
+mkdir -p /home/$newuser/.ssh
+touch /home/$newuser/.ssh/authorized_keys
+chmod -R go= /home/$newuser/.ssh
+chown -R $newuser:$newuser /home/$newuser/.ssh
+nano /home/$newuser/.ssh/authorized_keys
 ```
 2. Find your public SSH key that you wish to use
 3. Paste the public key into the SSH session where nano is running, it should only take up one line
 4. If you want multiple keys for the account, optionally add additional keys, 1 per line
 5. Press 'ctrl-x' to exit, then 'Y' to save and then finally press enter to accept the file name
 
-#### Optional 2 - If you want to lock down the server and disallow password to authenticate a SSH session
+#### Optional 2 - If you want to lock down the server and disallow passwords to authenticate a SSH session
 
 1. Run `sudo nano /etc/ssh/sshd_config`
 2. Find the line containing 'PasswordAuthentication' if there is a '#' before it remove it then make sure the line says `PasswordAuthentication no`
@@ -183,7 +194,7 @@ you install it.
 3. Change directory `cd /var/www/xyz.com`
 4. If you need to npm install or run build commands, now is the time
 
-### Set up pm2 to launch, manage, and provide environment variables to the app
+### Set up PM2 to launch, manage, and provide environment variables to the app
 
 1. Head back to the home folder by running `cd ~`
 2. Lets create an ecosystem file, run `nano xyz.com.ecosystem.config.js`
@@ -236,6 +247,9 @@ A couple of commands for PM2 you should know about, especially as we update
 our apps. In addition to starting the app as we did in step 11 above we can:
 * Stop the app: `pm2 stop xyz.com.ecosystem.config.js`
 * Restart the app: `pm2 restart xyz.com.ecosystem.config.js`
+* Monitor your apps: `pm2 monit`
+
+Read more in PM2's [documentation][11]
 
 ### Set up a nginx server block for this app
 
@@ -297,12 +311,12 @@ will respond to it's unique domain name(s). Lastly we saved money vs using
 Heroku.
 
 A suggested next step would be, if needed, set up your own hosted database, or
-redis server using this droplet or another server.
+redis server using this server or another.
 
 A good chunk of the steps above were derived from DigitalOcean's wonderful
 [tutorial][10] and it's prerequisites. I changed the order, modified some steps
-and added additional steps. I also to it by illustrating how to setup multiple
-apps.
+and added additional steps. I also added to it by illustrating how to setup
+multiple apps.
 
 If you've comments, as always please leave them below.
 
@@ -311,8 +325,13 @@ If you've comments, as always please leave them below.
 [3]: https://nodejs.org/en/download/
 [4]: https://www.heroku.com/
 [5]: https://www.heroku.com/pricing
-[6]: https://www.digitalocean.com/
-[7]: https://www.digitalocean.com/products/droplets/
-[8]: https://www.digitalocean.com/pricing/#standard-droplets
+[6]: https://www.vultr.com/
+[7]: https://www.vultr.com/products/cloud-compute/
+[8]: https://www.vultr.com/products/cloud-compute/#pricing
 [9]: https://github.com/keymetrics/pm2-logrotate#configure
 [10]: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-20-04
+[11]: https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
+[12]: http://aaronyoung.dev/blog/2020-08-22-setup-ubuntu-nodejs-server/#setup-a-non-root-user-with-sudo-privileges
+[13]: https://www.linode.com/
+[14]: https://aws.amazon.com/ec2/
+[15]: https://www.digitalocean.com/
