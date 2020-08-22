@@ -18,7 +18,7 @@ several of them to not have the limitations of a free server, namely the fact it
 sleeps after 30 minutes & the ability to have free SSL certificates. There are a
 few other gotchas with Heroku in general. According to their pricing, I'd
 need to get, at minimum, a 'Hobby' server, one for every app. Each one costs $7
-a month plus taxes, this equates to more than $84 a year for each app.
+a month plus taxes which equates to more than $84 a year for each app.
 
 I decided that I can do better. I went to [VULTR][6]'s site and looked
 into their servers, which they call Cloud Compute. Their cheapest server
