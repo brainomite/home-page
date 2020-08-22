@@ -3,7 +3,7 @@ layout: post
 title: How I Set Up a Server To Host Multiple Node.JS Projects & Save $54+ Per App Annually vs Heroku
 description: >
   We'll go through the steps of setting up a single Ubuntu 20.04 server to host
-  multiple Node.JS projects in order to save money
+  multiple Node.JS projects to save money
 sitemap: true
 comments: true
 ---
