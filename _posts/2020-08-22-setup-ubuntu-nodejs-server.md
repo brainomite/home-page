@@ -11,7 +11,7 @@ comments: true
 1. this unordered seed list will be replaced by the toc
 {:toc}
 
-## What and why
+## What and Why
 
 I have built several small lightly used Node.js projects on [Heroku][4]. I want
 several of them to not have the limitations of a free server, namely the fact it
@@ -41,10 +41,10 @@ A few requirements before we dive right in.
    user you'll be creating and using
 
 With that being said, you can use any server running Ubuntu 20.04 x64 should you
-not wish to use [VULTR][6], some other options include [Linode][13],
+wish not to use [VULTR][6], some other options include [Linode][13],
 [Amazon EC2][14], [DigitalOcean][4], and many more. Just skip the 'Steps to
 deploy a new Cloud Compute server' section deploy the server elsewhere then
-start with [Setup a non-root user with sudo privilege][12] .
+start with [Setup a non-root user with sudo privilege][12].
 {:.note}
 
 ## Deploy a server and initially set it up
@@ -53,7 +53,7 @@ start with [Setup a non-root user with sudo privilege][12] .
 
 1.  Login to [VULTR][6]
 2.  In the top right corner, click the circle with a plus sign then 'Deploy New Serve'
-3.  Because we can always scale up is needed I personally selected the cheapest
+3.  Because we can always scale up, I personally selected the cheapest
     type of server Cloud Compute server
 4.  Choose a datacenter region that makes sense for your region
 5.  Make sure Ubuntu is selected with '20.04 (LTS) x64'
@@ -75,7 +75,7 @@ start with [Setup a non-root user with sudo privilege][12] .
 
 ### Setup a non-root user with sudo privileges
 
-For the following steps, I will be using 'john' as a user, substitute it for whatever you want.
+For the rest of this post, I will be using 'john' as a user, substitute it for whatever you want.
 {:.note}
 
 1.  Log into root via SSH if you are not already connected
@@ -98,12 +98,13 @@ nano /home/$newuser/.ssh/authorized_keys
 3. If you want multiple keys for the account, optionally add additional keys, 1 per line
 4. Press 'ctrl-x' to exit, then 'Y' to save and then finally press enter to accept the file name
 
-#### Optional 2 - If you want to lock down the server and disallow passwords to authenticate a SSH session
+#### Optional 2 - If you want to lock down the server and disallow passwords to authenticate an SSH session
 
 1. Run `sudo nano /etc/ssh/sshd_config`
-2. Find the line containing 'PasswordAuthentication' if there is a '#' before it remove it then make sure the line says `PasswordAuthentication no`
+2. Find the line containing 'PasswordAuthentication'. If there is a '#' before
+   it, remove it, then make sure the line says `PasswordAuthentication no`
 3. Press 'ctrl-x' to exit, 'Y' to save, then 'enter' to keep the existing filename
-4. Lastly run `sudo systemctl restart ssh`
+4. Lastly, run `sudo systemctl restart ssh`
 
 ### Setup initial firewall
 
@@ -119,7 +120,7 @@ nano /home/$newuser/.ssh/authorized_keys
 4.  Run the following `sudo ufw allow 'Nginx Full'` to enable HTTP/HTTPS traffic (ports 80 and 443)
 5.  To verify everything is working navigate, from your browser to `http://your_server_ip` (HTTP,
     not HTTPS) you should get a standard 'welcome to nginx' page
-6.  To fix a possible memory problem, lets set the hash bucket size by running `sudo nano /etc/nginx/nginx.conf`
+6.  To fix a possible memory problem, let's set the hash bucket size by running `sudo nano /etc/nginx/nginx.conf`
 7.  Look for the 'server_names_hash_bucket_size' directive and remove the '#' from the line
 8.  Exit by pressing 'ctrl-x', save by pressing 'y', accept file name by pressing 'enter'
 9.  Validate the config file by running `sudo nginx -t` you should get the following output if all
@@ -143,12 +144,12 @@ At the time of this writing, the latest LTS Node.js version is 12.18.3
 {:.note}
 
 1. Update apt-get with the correct package by running `curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -`
-2. Let's actually install it by running `sudo apt-get install -y nodejs`
+2. Let's install it by running `sudo apt-get install -y nodejs`
 3. Let's install a build tool by running `sudo apt-get install -y build-essential`
 4. Let's indicate that, by default, node apps should be running in production by doing the following
     1. Run `sudo nano /etc/environment`
     2. Add a new line containing `NODE_ENV="production"`
-    3. Save the file by 'ctrl-x' , 'y', and 'enter'
+    3. Save the file by 'ctrl-x', 'y', and 'enter'
     4. Load the new environment variable by running `source /etc/environment`
 
 ### Install PM2, a process manager for Node.js
@@ -168,7 +169,7 @@ At the time of this writing, the latest LTS Node.js version is 12.18.3
 ## Set up a new app with its corresponding domains
 
 Three things: First this section can be done multiple times, once for every app
-domain combo. Second, replace xyz.com & www.xyz.com with your url(s).
+domain combo. Second, replace xyz.com & www.xyz.com with your URL(s).
 Third, pick a unique port for this app, no two apps should share a port. Keep it
 in mind, you'll need it twice.
 {:.note}
@@ -201,25 +202,25 @@ you install it.
 2. Let's create an ecosystem file, run `nano xyz.com.ecosystem.config.js`
 3. Copy the below text into the SSH session
     ```js
-    module.exports = {
-      apps : [{
-        name: "demo",
-        script: "/var/www/xyz.com/app.js",
+module.exports = {
+    apps : [{
+    name: "demo",
+    script: "/var/www/xyz.com/app.js",
 
-        /*
-        * uncomment the next line or two to enable logging both stdout and
-        * error outputs to disk and optionally enable prepending the logs with a
-        * timestamp.
-        */
-        // log_file: '/home/john/applogs/xyz.com/combined.log',  // don't forget to change from john
-        // time: true, // enable prepending of a time-stamp
+    /*
+    * uncomment the next line or two to enable logging both stdout and
+    * error outputs to disk and optionally enable prepending the logs with a
+    * timestamp.
+    */
+    // log_file: '/home/john/applogs/xyz.com/combined.log',  // don't forget to change from john
+    // time: true, // enable prepending of a time-stamp
 
-        // environment variables
-        env: {
-          PORT: "3000",
-        },
-      }]
-    }
+    // environment variables
+    env: {
+        PORT: "3000",
+    },
+    }]
+}
     ```
     ~/xyz.com.ecosystem.config.js
     {:.figcaption}
@@ -237,7 +238,7 @@ you install it.
     `john` and the `xyz.com`. Optionally uncomment the `time` line to have the
     logs prepended with a timestamp.
 9.  Press 'ctrl-x' to exit, 'y' to save, 'enter' to accept the name
-10. If opting to log to disk, lets create the folder for it by running
+10. If opting to log to disk, let's create the folder for it by running
     `mkdir -p ~/applogs/xyz.com`
 11. To start the app for the first time run `pm2 start xyz.com.ecosystem.config.js`
 12. Let's save the PM2 process list and corresponding environments so that on
@@ -289,7 +290,7 @@ If this is your first time setting up certificates with certbot, you will be
 prompted for an email address, and you'll need to accept an agreement
 {:.note}
 
-Please be aware that you may have issues if your DNS changes hasn't fully
+Please be aware that you may have issues if your DNS changes haven't fully
 propagated yet
 {:.note}
 
