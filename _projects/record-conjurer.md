@@ -11,9 +11,11 @@ srcset:
 caption: Handcrafted custom ORM for Ruby
 description: >
   Handcrafted custom ORM inspired by Ruby on Rails' Active Record.
-  It uses metaprogramming techniques to allow for dynamic helper functions allowing for DRYer code.
 links:
   - title: GitHub Source Code
     url: https://github.com/brainomite/record-conjurer
 featured: false
 ---
+
+* Utilized metaprogramming techniques to allow users to semantically define relationships between various models to denote various kinds of SQL joins.
+* Abstracts away the complex SQL queries and associations making data easy to retrieve.

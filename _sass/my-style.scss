@@ -93,10 +93,10 @@
 
 @media (max-width: 600px) {
   html {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   #markdown-toc a, .note-sm {
-    font-size: 13px;
+    font-size: 13px !important;
   }
   :root {
     --marquee-width: 100vw;
