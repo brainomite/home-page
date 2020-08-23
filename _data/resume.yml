@@ -35,7 +35,7 @@ basics:
       username: "Brainomite"
       url: "https://medium.com/@brainomite"
 work:
-  - company: "Pinpoint Technologies Too"
+  - company: "Pinpoint Technologies Too, LLC"
     position: "Software Engineer"
     # website: "https://piedpiper.com"
     startDate: "2011-1-1"
@@ -46,11 +46,28 @@ work:
     #   but approach the theoretical limit of lossless compression.
     highlights:
       - "Designed and operated tools to analyze potential portfolio purchases and to monitor performances of existing portfolios - Node.js, Express.js, Nunjucks, Postgres"
-  - company: "Mel S Harris and Associates / Stephen Einstein and Associates, PC"
+  - company: "Stephen Einstein and Associates, PC"
     position: "Software Engineer"
     website: "https://stepheneinstein.com"
-    startDate: "2002-5-1"
+    startDate: "2015-9-1"
     endDate: "2017-10-1"
+    # summary: >
+    #   Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
+    #   consistently fielded high Weisman Scores™ that are not merely competitive,
+    #   but approach the theoretical limit of lossless compression.
+    highlights:
+      - "Monitored and managed all technical assets physically on-site and in AWS"
+      - "Engineered a replacement for the firm's line of business’s flawed
+        statute of limitation checker reducing the firm’s chance of being sued
+        by bringing it in line with New York specific laws"
+      - "Increased efficiency two-fold and reduced business expenses and staff
+        by creating tools to export the data from Mel S Harris’ proprietary
+        database system to allow for a migration."
+  - company: "Mel S Harris and Associates, LLC"
+    position: "Software Engineer"
+    # website: "https://stepheneinstein.com"
+    startDate: "2002-5-1"
+    endDate: "2015-9-1"
     # summary: >
     #   Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
     #   consistently fielded high Weisman Scores™ that are not merely competitive,
@@ -63,9 +80,9 @@ work:
         simultaneous calls and integrated with our PBX (internal phone system),
         improving productivity by at least 50%. - Visual Basic 6, MySQL,
         telephony tech"
-      - "Increased efficiency two-fold and reduced business expenses and staff
-        by creating tools to export the data from Mel S Harris’ proprietary
-        database system to allow for a migration."
+      - "Reduced our backup times from 76 hours on average to 10 recreating our
+        document storage solution by implementing a proprietary document storage
+        database - Visual Basics 6, MySql"
 volunteer:
   - organization: "Mutual Aid NYC"
     position: "Software Engineer"
