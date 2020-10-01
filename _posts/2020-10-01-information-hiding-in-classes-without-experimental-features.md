@@ -12,7 +12,7 @@ What they explained to me is they created that they created the class object as
 required, but then they were manipulating properties and/or using functions
 that were prefixed with the `_` character. As you may or may not know, there is
 an implicit contract dictating that properties that have names beginning with
-`_` shall not be accessed, altered or even invoked. I believe that this implicit
+`_` shall not be accessed, altered, or even invoked. I believe that this implicit
 contract isn't always sufficient and it isn't defensive programming. People,
 like my friend, can and do break the implicit contract when consuming a library.
 
