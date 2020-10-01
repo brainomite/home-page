@@ -44,7 +44,7 @@ class ContractSecretKeeper {
   constructor(secret, password) {
     // No one should touch or examine this because we have a contract
     // that these are internal variables, and not to be relied upon.
-    // Sadly I'm still publicly available.
+    // Sadly they are still publicly available.
     this._secret = secret;
     this._password = password;
   }
