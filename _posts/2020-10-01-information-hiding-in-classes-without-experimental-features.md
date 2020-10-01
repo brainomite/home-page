@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to create private class instance variables without using experimental features in Javascript.
+title: How to create private class instance variables without using experimental features in JavaScript.
 description: >
   I explain how to hide internal functions and variables that will not be available by the consumer
 sitemap: true
