@@ -8,11 +8,11 @@ comments: true
 ---
 
 I had a friend tell me the other day that they figured out how to use an API.
-What they explained to me is they created the class object as required, but then
-they were manipulating properties and or using functions that were prefixed
-with `_` character. You may or may not know, it is a convention in JS prefix
-properties on objects with a `_` to indicate that the variables/functions are
-for internal use only.
+What they explained to me is they created that they created the class object as
+required, but then they were manipulating properties and / or using functions
+that were prefixed with the `_` character. As you may or may not know, it is a
+convention in JS prefix properties on objects with a `_` to indicate that the
+variables/functions are for internal use only.
 
 There happens to be a [stage 3 proposal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields) for private class variables, which is considered experimental, and I won't be delving into it here. Even
 though it reached stage 3 in July 2017 it hasn't been implemented widely yet,
