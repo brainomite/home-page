@@ -23,8 +23,8 @@ implemented widely yet. For example, Firefox hasn't as per [Can I Use](https://c
 I believe we'll be waiting at least another year before, or if, it is added to
 final specs. I don't like using experimental features as the syntax can change
 at any time. Therefore, I have come up with a way to encapsulate private
-instance variables and functions that won't be
-accessible by the consumers of the API.
+instance variables and functions that won't be accessible by the consumers of
+the API by using a [higher-order function](https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99).
 
 Below I've created two examples that are functionally the same, albeit the first
 example will have additional properties, but the contract is, no one should use
@@ -89,10 +89,17 @@ console.log(badSecretKeeper._secret); //=> I stole some cookies
 
 ```js
 function functionGenerator(secret, password) {
+  // this function is an higher-order function
+
   // super secret variables available via closure
   let _secret = secret;
   let _password = password;
 
+  /*****
+   * Notice 'this' isn't used in any of these 3 functions though if you wanted
+   * to, you can pass in the object as a variable to a generator function so you may
+   * use class functions and class variables.
+   *****/
   return {
     getSecret: (password) => {
       if (password === _password) {
