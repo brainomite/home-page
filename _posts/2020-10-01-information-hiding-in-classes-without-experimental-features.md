@@ -2,7 +2,7 @@
 layout: post
 title: How to create private class instance variables without using experimental features in JavaScript.
 description: >
-  I explain how to hide internal functions and variables that will not be available to the consumer of the class
+  I explain how to hide internal functions and variables from the consumer of the class
 sitemap: true
 comments: true
 ---
@@ -28,7 +28,8 @@ accessible by the consumers of the API.
 
 Below I've created two examples that are functionally the same, albeit the first
 example will have additional properties, but the contract is, no one should use
-or modify it. In the second example, I used [Object.defineProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+or modify it. In the second example, I used
+[Object.defineProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 a cool function that, as its clever name indicates, defines a property on an
 object. You can define, setters, getters, and normal class variables (that can
 be any variable, object, or function). You can also specify whether a class
@@ -78,6 +79,8 @@ const badSecretKeeper = new ContractSecretKeeper("I stole some cookies", "cookie
 
 console.log(badSecretKeeper); //=> {_secret: "I stole some cookies", _password: "cookieMonster"}
 console.log(badSecretKeeper.getSecret("cookieMonster")); //=> I stole some cookies
+// Secret? What is so secret? I can get the secret without knowing the password, watch!
+console.log(badSecretKeeper.getSecret(badSecretKeeper._password)); //=> I stole some cookies
 console.log(badSecretKeeper._password); //=> cookieMonster
 console.log(badSecretKeeper._secret); //=> I stole some cookies
 ```
