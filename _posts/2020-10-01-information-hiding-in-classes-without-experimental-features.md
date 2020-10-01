@@ -28,7 +28,7 @@ For my purposes, I needed instance variables.
 
 Below I've created two examples that are functionally the same, albeit the first
 example will have additional properties, but the contract is, no one should use
-or modify it. In the second example, I use [Object.defineProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) a cool function that, as its clever name indicates, defines a
+or modify it. In the second example, I used [Object.defineProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) a cool function that, as its clever name indicates, defines a
 property on an object. You can define, setters, getters, and normal class
 variables (that can be any variable, object, or function). You can also specify
 whether a class variable is writable. I encourage you to read the documentation on it, and it's sibling function [Object.defineProperties()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties).
