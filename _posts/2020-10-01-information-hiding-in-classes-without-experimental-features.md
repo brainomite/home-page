@@ -8,8 +8,8 @@ comments: true
 ---
 
 I had a friend tell me the other day that they figured out how to use an API.
-What they explained to me is they created that they created the class object as
-required, but then they were manipulating properties and/or using functions
+What they explained to me they instantiated class objects as required, but then
+they were manipulating properties and/or using functions
 that were prefixed with the `_` character. As you may or may not know, there is
 an implicit contract dictating that properties that have names beginning with
 `_` shall not be accessed, altered, or even invoked. I believe that this implicit
