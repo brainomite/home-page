@@ -27,14 +27,13 @@ title: Aaron Young
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Aaron is a Software Engineer and Board Game Enthusiast. Come check out his work.
 
 # A shorter description for the sidebar.
 tagline: Software Engineer <br/> & <br/> Board Game Enthusiast
 
 # A list of keywords for your blog
-keywords: []
+keywords: [Javascript, Ruby, NodeJs, React, Redux]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
