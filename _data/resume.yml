@@ -35,9 +35,17 @@ basics:
       username: "Brainomite"
       url: "https://medium.com/@brainomite"
 work:
+  - company: "Thinkful @ Chegg, Inc"
+    position: "Student Mentor"
+    website: "https://thinkful.com"
+    startDate: "2020-10-7"
+    endDate: ""
+    summary: >
+      An online-only coding boot-camp. We teach many subjects including full stack web development.
+    highlights:
+      - "Mentor students one on one via video sessions covering topics including HTML/CSS, Javascript, jQuery, NodeJS, PostgreSQL, Express, React"
   - company: "Pinpoint Technologies Too, LLC"
     position: "Software Engineer"
-    # website: "https://piedpiper.com"
     startDate: "2011-1-1"
     endDate: ""
     # summary: >
@@ -45,16 +53,15 @@ work:
     #   consistently fielded high Weisman Scores™ that are not merely competitive,
     #   but approach the theoretical limit of lossless compression.
     highlights:
-      - "Designed and operated tools to analyze potential portfolio purchases and to monitor performances of existing portfolios - Node.js, Express.js, Nunjucks, Postgres"
+      - "Designed and operated tools to analyze potential portfolio purchases and to monitor performances of existing portfolios - Node.js, Express, Nunjucks, PostgreSQL"
   - company: "Stephen Einstein and Associates, PC"
     position: "Software Engineer"
     website: "https://stepheneinstein.com"
     startDate: "2015-9-1"
     endDate: "2017-10-1"
-    # summary: >
-    #   Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
-    #   consistently fielded high Weisman Scores™ that are not merely competitive,
-    #   but approach the theoretical limit of lossless compression.
+    summary: >
+      Stephen Einstein and Associates is a law firm specializing in servicing the needs of creditors.
+      Their main specialization is bridging the communication gap between creditors and hard to find consumers.
     highlights:
       - "Monitored and managed all technical assets physically on-site and in AWS"
       - "Engineered a replacement for the firm's line of business’s flawed
@@ -65,31 +72,29 @@ work:
         database system to allow for a migration."
   - company: "Mel S Harris and Associates, LLC"
     position: "Software Engineer"
-    # website: "https://stepheneinstein.com"
     startDate: "2002-5-1"
     endDate: "2015-9-1"
-    # summary: >
-    #   Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
-    #   consistently fielded high Weisman Scores™ that are not merely competitive,
-    #   but approach the theoretical limit of lossless compression.
+    summary: >
+      Mel S Harris was a a law firm specializing in servicing the needs of creditors.
+      It was acquired in 2015 by Stephen Einstein and Associates, PC.
     highlights:
       - "Pioneered an automation solution to enable attorneys to load up the
         correct documentation automatically, increasing their efficiency by 4
         fold. - Visual Basic 6, MySQL"
       - "Devised a proprietary automated dialer that can accommodate up to 24
-        simultaneous calls and integrated with our PBX (internal phone system),
+        simultaneous calls and integrated with a PBX (internal phone system),
         improving productivity by at least 50%. - Visual Basic 6, MySQL,
         telephony tech"
-      - "Reduced our backup times from 76 hours on average to 10 recreating our
-        document storage solution by implementing a proprietary document storage
-        database - Visual Basics 6, MySql"
+      - "Reduced our backup times from seventy six hours on average to ten by
+        implementing a proprietary document storage database - Visual Basics 6,
+        MySql"
 volunteer:
   - organization: "Mutual Aid NYC"
     position: "Software Engineer"
     website: "https://mutualaid.nyc/"
     startDate: "2020-03-01"
     endDate: ""
-    # summary: "Mutual Aid network that supports "
+    summary: "An organization supporting other hyper-localized mutual aid organizations across the Tri-State"
     highlights:
       - "Designed and implemented their hotline system - NodeJS, Twilio,
         Airtable"
@@ -142,14 +147,18 @@ languages:
     fluency: "3/5"
   - language: "SQL"
     fluency: "4/5"
+  - language: "TypeScript"
+    fluency: "1/5"
 interests:
   - name: "Board Games"
     keywords:
       - "Strategy Games"
       - "Party Games"
+      - "Hidden traitor Games"
   - name: "Animals"
     keywords:
       - "Dogs"
+      - "Cats"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >
