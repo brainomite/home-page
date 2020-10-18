@@ -152,9 +152,9 @@ languages:
 interests:
   - name: "Board Games"
     keywords:
-      - "Strategy Games"
-      - "Party Games"
-      - "Hidden traitor Games"
+      - "Strategy games"
+      - "Party games"
+      - "Hidden traitor games"
   - name: "Animals"
     keywords:
       - "Dogs"
