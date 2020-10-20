@@ -159,6 +159,9 @@ interests:
     keywords:
       - "Dogs"
       - "Cats"
+  - name: "Drones"
+    keywords:
+      - DJI Mavic Air 2
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >
