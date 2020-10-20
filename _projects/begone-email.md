@@ -8,10 +8,10 @@ caption: Anonymous temporary ad hoc emails
 description: >
   This is an ad-hoc temporary email service.
 links:
-  - title: Live
-    url: https://ahem.monster
+  # - title: Live
+  #   url: https://ahem.monster
   - title: GitHub Source Code
-    url: https://github.com/brainomite/Ad-Hoc-Email-Server/tree/production
+    url: https://github.com/brainomite/begone-email
 featured: false
 ---
 
