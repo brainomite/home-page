@@ -53,7 +53,7 @@ menu:
   - title: About Me
     url: /
   - title: Portfolio
-    url: /projects/
+    url: /portfolio/
   - title: Blog
     url: /blog/
   - title: Résumé
@@ -64,7 +64,7 @@ menu:
     url: /coding_activity/
 
 # Add links to the footer.
-# Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
+# Typically you'll want to link to your cookie- or privacy policy (if applicable), etc..
 legal:
   # - title: LICENSE
   #   url: /LICENSE/

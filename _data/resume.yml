@@ -41,17 +41,15 @@ work:
     startDate: "2020-10-7"
     endDate: ""
     summary: >
-      An online-only coding boot-camp. We teach many subjects including full stack web development.
+      An online-only coding boot-camp. We teach many subjects including full-stack web development.
     highlights:
       - "Mentor students one on one via video sessions covering topics including HTML/CSS, Javascript, jQuery, NodeJS, PostgreSQL, Express, React"
   - company: "Pinpoint Technologies Too, LLC"
     position: "Software Engineer"
     startDate: "2011-1-1"
     endDate: ""
-    # summary: >
-    #   Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
-    #   consistently fielded high Weisman Scores™ that are not merely competitive,
-    #   but approach the theoretical limit of lossless compression.
+    summary: >
+      Pinpoint Technologies manages creditor's portfolios as well as analyze potential purchases.
     highlights:
       - "Designed and operated tools to analyze potential portfolio purchases and to monitor performances of existing portfolios - Node.js, Express, Nunjucks, PostgreSQL"
   - company: "Stephen Einstein and Associates, PC"
