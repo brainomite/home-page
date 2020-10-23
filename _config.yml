@@ -62,6 +62,8 @@ menu:
     url: /calendly/
   - title: Coding Activity
     url: /coding_activity/
+  - title: Drone Fun
+    url: http://drone-fun.aaronyoung.dev
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if applicable), etc..

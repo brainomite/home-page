@@ -4,7 +4,7 @@ title: About Me
 sitemap: true
 cover: true
 ---
-
+<span id="about-me"></span>
 Hi, I'm Aaron a software engineer with experience in JavaScript, React, Ruby on Rails and Node.js. I also have a background in systems administration. From a child as early as 5th grade I have always demonstrated a love for all things computer related. I began repairing computers for my friends starting in 7th grade.
 
 My journey to where I am today began in High School where I learned Visual Basic 5 in 10th-grade computer class. In 12th grade, I was given the opportunity to take and pass the Computer Science AP course. In college, I continued to take computer-related courses. After college, I went out to acquire industry certifications in Microsoft operating systems. From there I landed the job that I held for 15 years.
