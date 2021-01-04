@@ -60,8 +60,8 @@ menu:
     url: /resume/
   - title: Schedule with me
     url: /calendly/
-  - title: Coding Activity
-    url: /coding_activity/
+  # - title: Coding Activity
+  #   url: /coding_activity/
   - title: Drone Fun
     url: http://drone-fun.aaronyoung.dev
 
