@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Up and Using NYC
+title: Setting Up and Using NYC's HTML report
 description: >
   I show how to setup and use NYC's HTML coverage report.
 sitemap: true
