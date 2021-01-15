@@ -7,6 +7,9 @@ sitemap: true
 comments: true
 ---
 
+* this unordered seed list will be replaced by the toc
+{:toc}
+
 Before I start, I wanted to indicate that this post is primarily targeted
 towards my Thinkful engineering students.
 
@@ -14,6 +17,11 @@ By now, we’ve seen the accumulator pattern, and we can now accumulate a specif
 set of items. But what if we don’t know beforehand that list of things, or if
 the quantity of variables needed to count a particular set of items is a large
 number?
+
+We'll be using an object to achieve our goals. We are using an object
+because of the fact that there can only be one property of a given property
+name therefore it is perfect for counting things. Once you've finish
+accumulating into an object, it can be transformed to a final result/data type.
 
 Let me introduce a problem I'll solve using this new pattern.
 
@@ -186,7 +194,7 @@ pattern. We’ve also refactored it to a shorter function, reducing the lines of
 code and redundant comments. The method, having been reduced from 17 lines to 9,
 is just a smidgen over half the original size.
 
-## Bonus Version Using New Features from 2020 Release of JS
+## Bonus Version Using a New Feature from the 2020 Release of JS
 
 While you can use any of the above versions, I like the following one because it
 is quickest to write and is very semantic to someone who is up to date on their
