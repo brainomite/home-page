@@ -83,8 +83,8 @@ You'll also see a breakdown of time by language.
 There's this tool [WakaTime](https://wakatime.com/), that will let you know
 exactly this and more!
 
-Please be aware they are collecting your data, and if you are concerned about privacy, y
-ou can check out the FAQ on privacy [here](https://wakatime.com/faq).
+Please be aware they are collecting your data, and if you are concerned about privacy,
+you can check out the FAQ on privacy [here](https://wakatime.com/faq).
 {:.note}
 
 The free account will only show you your coding for the past 2 weeks.!
