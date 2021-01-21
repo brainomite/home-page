@@ -87,7 +87,7 @@ Please be aware they are collecting your data, and if you are concerned about pr
 you can check out the FAQ on privacy [here](https://wakatime.com/faq).
 {:.note}
 
-The free account will only show you your coding for the past 2 weeks.!
+The free account will only show you your coding for the past 2 weeks.
 
 Should you wish to use this, sign up and then follow [these directions](https://wakatime.com/vs-code)
 to set it up with VS code.
