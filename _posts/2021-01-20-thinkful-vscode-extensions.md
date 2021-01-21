@@ -77,17 +77,17 @@ You can find the repo for the extension pack [here](https://github.com/brainomit
 Are you like me, someone who loves stats?
 Do you want to track how much coding you are doing?
 
-You'll know how much time you spent coding overall and broken down by projects.
-You'll also see a breakdown of time by language.
-
 There's this tool [WakaTime](https://wakatime.com/), that will let you know
 exactly this and more!
+
+You'll know how much time you spent coding overall and broken down by projects.
+You'll also see a breakdown of time by language.
 
 Please be aware they are collecting your data, and if you are concerned about privacy,
 you can check out the FAQ on privacy [here](https://wakatime.com/faq).
 {:.note}
 
-The free account will only show you your coding for the past 2 weeks.
+The free account will show you your coding for the past 2 weeks.
 
 Should you wish to use this, sign up and then follow [these directions](https://wakatime.com/vs-code)
 to set it up with VS code.
