@@ -23,7 +23,7 @@ will install all of these extensions in one shot!
 {:.note}
 
 
-TL;DR - I want to get all of the suggested extensions [click here](#download-of-all-the-suggested-extensions)
+TL;DR - Download all the suggested extensions [here](#download-of-all-the-suggested-extensions)
 
 Thinkful has a module on installing Visual Studio Code. In that module, they
 recommend [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), a
