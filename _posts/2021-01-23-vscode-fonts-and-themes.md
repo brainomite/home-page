@@ -39,5 +39,5 @@ JetBrains Mono doesn't have as many ligatures as Fira Code
 {:.note}
 
 <iframe frameborder="0" class="juxtapose" width="100%" height="290" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=62a2aad6-5dc0-11eb-83c8-ebb5d6f907df"></iframe>
-Comparison of Fira Code ligatures vs JetBrains Mono's ligatures
+Comparison of JetBrains Mono with and without ligatures
 {:.figcaption}
