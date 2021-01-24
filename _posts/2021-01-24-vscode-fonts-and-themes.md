@@ -5,6 +5,12 @@ description: >
   I provide fonts, icons, and themes for adjusting the look of VS Code
 sitemap: true
 comments: true
+image:
+  path:    /assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono.png
+  srcset:
+    1800w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono.png
+    900w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono@0,5x.png
+    450w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono@0,25x.png
 ---
 
 I'm going to give some options for styling your vscode. We use VS Code daily,
