@@ -1,5 +1,6 @@
 .type.storage,.type.storage.declaration, .storage.class.modifier, .mtki {
-  font-family: 'Script12 BT';
+  font-family: 'Victor Mono';
+  font-size: 1.1em;
 }
 
 .type.storage.arrow.function {
@@ -7,12 +8,15 @@
 }
 
 .decorator.name, .decorator.punctuation:not(.block), .import.keyword {
-    font-family: 'Script12 BT';
+    font-family: 'Victor Mono';
+    font-size: 1.1em
 }
 .attribute-name {
-    font-family: 'Script12 BT';
+    font-family: 'Victor Mono';
+    font-size: 1.1em
 }
 
 .comment:not(.punctuation) {
-    font-family: Script12 BT;
+    font-family: 'Victor Mono';
+    font-size: 1.1em
 }

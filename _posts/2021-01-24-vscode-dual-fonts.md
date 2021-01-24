@@ -11,8 +11,6 @@ image:
     1800w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover.png
     900w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,5x.png
     450w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,25x.png
-related_posts:
-  - /posts/2021-01-24-vscode-fonts-and-themes
 ---
 
 Like the fonts in the cover image? Want to use any two fonts, with one being
@@ -27,7 +25,7 @@ The theme used (that has an option for the glow effect, which I enabled) is
 {:.lead}
 
 1. If not already installed, download and install desired fonts. I'm using
-   [JetBrains Mono](https://www.jetbrains.com/lp/mono/)for my main font and [Script12 BT](https://www.dafontfree.net/freefonts-script12-bt-f141942.htm)
+   [JetBrains Mono](https://www.jetbrains.com/lp/mono/)for my main font and [Victor Mono](https://rubjo.github.io/victor-mono/)
    but feel free to use whatever you'd like. A lot of people like [Fira Code](https://github.com/tonsky/FiraCode#download--install)
    instead of JetBrains Mono
    1. Unzip the downloaded archive
@@ -81,7 +79,7 @@ The theme used (that has an option for the glow effect, which I enabled) is
             - Example: `file:///C:/Users/MyUserName/Desktop/styles.css`
          - Mac or Linux
             - Example "file:///Users/MyUserName/Desktop/style.css"
-7. Install the extension, [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums)
+7. Install the extension, [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums) this will remove the error, "Your code installation appears to be corrupt"
 8. In the command palette (view>command pallet), run `Reload Custom CSS and JS`
 9. In the command palette, run `Fix Checksums: Apply`
 10. Restart VS Code by exiting, not reloading, VS Code and, start it back up.

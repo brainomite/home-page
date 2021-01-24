@@ -11,6 +11,8 @@ image:
     1800w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover.png
     900w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,5x.png
     450w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,25x.png
+related_posts:
+  - /posts/2021-01-24-vscode-dual-fonts/
 ---
 
 I'm going to give some options for styling your vscode. We use VS Code daily,
@@ -18,9 +20,9 @@ all day long. Why not set the icons, fonts, and theme to a style you like best?
 Your eyes will thank you!
 
 The cover image actually uses a combination of two fonts, [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-& [Script12 BT](https://www.dafontfree.net/freefonts-script12-bt-f141942.htm)! It also
-done using some trickery but I'll be sharing how in a how-to coming later, stay
-tuned! The theme is [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
+& [Victor Mono](https://rubjo.github.io/victor-mono/)! It is done using some
+trickery [read about it here](/blog/2021-01-24-vscode-dual-fonts/). The theme is
+[SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
 with the glow enabled.
 {:.note}
 
