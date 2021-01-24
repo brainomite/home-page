@@ -6,16 +6,22 @@ description: >
 sitemap: true
 comments: true
 image:
-  path:    /assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono.png
+  path:    /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover.png
   srcset:
-    1800w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono.png
-    900w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono@0,5x.png
-    450w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono@0,25x.png
+    1800w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover.png
+    900w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,5x.png
+    450w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,25x.png
 ---
 
 I'm going to give some options for styling your vscode. We use VS Code daily,
 all day long. Why not set the icons, fonts, and theme to a style you like best?
 Your eyes will thank you!
+
+The cover image actually uses a combination of two fonts, [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+& [Script12 BT](https://www.dafontfree.net/freefonts-script12-bt-f141942.htm)! This is
+done using some trickery but I'll be sharing how in a how-to coming later, stay
+tuned!
+{:.note}
 
 Everything in this post is geared towards dark mode as that is my preference.
 {:.note}
