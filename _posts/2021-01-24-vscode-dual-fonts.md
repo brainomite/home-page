@@ -13,15 +13,17 @@ image:
     450w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,25x.png
 ---
 
-Like the fonts in the cover image? Want to use any two fonts, with one being
-italic? I've got you covered
+I love the code ligatures of JetBrains Mono and Fira Code, but I was
+disappointed at the subtle italics. I also didn't want to shell out $199 for a
+[font](https://www.typography.com/fonts/operator/styles/operatormono). I,
+therefore, found a better option. Using two coding fonts with ligatures.
 
 The theme used (that has an option for the glow effect, which I enabled) is
 [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
 {:.note}
 
-> Please be aware, any time you update the CSS or VS Code is updated to a new version,
-  follow steps 8-10.
+> Please be aware, any time VS Code is updated to a new version or you update
+  the CSS, repeat steps 8-10.
 {:.lead}
 
 1. If not already installed, download and install desired fonts. I'm using
@@ -64,7 +66,7 @@ The theme used (that has an option for the glow effect, which I enabled) is
    2. Change `JetBrains Mono` to your preferred main font
 5. Cursive Font: If you are using a font other than JetBrains Mono
    1. Edit the styles.css
-   2. Change `Script12 BT` to your preferred cursive font
+   2. Change `Victor Mono` to your preferred cursive font
 6. Update settings.json
    1. Add the following within the settings.json, without the comments & open or
       close brackets
@@ -81,10 +83,14 @@ The theme used (that has an option for the glow effect, which I enabled) is
             - Example "file:///Users/MyUserName/Desktop/style.css"
 7. Install the extension, [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums) this will remove the error, "Your code installation appears to be corrupt"
 8. In the command palette (view>command pallet), run `Reload Custom CSS and JS`
+
+   You will get an error message saying that the installation is corrupt. This
+   is to be expected and will be resolved in the next two steps.
+   {:.note}
+
 9. In the command palette, run `Fix Checksums: Apply`
 10. Restart VS Code by exiting, not reloading, VS Code and, start it back up.
 
 I took some content from [An alternative to Operator Mono font](https://medium.com/@docodemore/an-alternative-to-operator-mono-font-6e5d040e1c7e)
 and [Multiple Fonts: Alternative to Operator Mono in VSCode](https://medium.com/@zamamohammed/multiple-fonts-alternative-to-operator-mono-in-vscode-7745b52120a0)
-then modified and added some steps.
 {:.faded}
