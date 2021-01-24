@@ -15,7 +15,7 @@ related_posts:
   - /posts/2021-01-24-vscode-fonts-and-themes
 ---
 
-Like the fonts in the cover Image? Want to use any two fonts with one being
+Like the fonts in the cover image? Want to use any two fonts, with one being
 italic? I've got you covered
 
 The theme used (that has an option for the glow effect, which I enabled) is
@@ -26,9 +26,9 @@ The theme used (that has an option for the glow effect, which I enabled) is
   follow steps 8-10.
 {:.lead}
 
-1. If not already installed, Download and install desired fonts. I'm using [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-   for my main font and [Script12 BT](https://www.dafontfree.net/freefonts-script12-bt-f141942.htm) but feel free to use whatever you'd like. A lot
-   of people like [Fira Code](https://github.com/tonsky/FiraCode#download--install)
+1. If not already installed, download and install desired fonts. I'm using
+   [JetBrains Mono](https://www.jetbrains.com/lp/mono/)for my main font and [Script12 BT](https://www.dafontfree.net/freefonts-script12-bt-f141942.htm)
+   but feel free to use whatever you'd like. A lot of people like [Fira Code](https://github.com/tonsky/FiraCode#download--install)
    instead of JetBrains Mono
    1. Unzip the downloaded archive
    2. Install the font
@@ -45,22 +45,22 @@ The theme used (that has an option for the glow effect, which I enabled) is
            install fonts system-wide)
         2. `fc-cache -f -v`
    3. Go to settings
-   4. To set desired font
+   4. To set the desired main font
       1. In the settings panel, on the left, Navigate to Text Editor>Font
-      2. Set 'Font Family' to your preferred font, for example `JetBrains Mono`
+      2. Set 'Font Family' to your preferred font, for example, `JetBrains Mono`
          or `Fira Code`
    5. To enable ligatures
       1. In the settings panel, on the left, Navigate to Text Editor>Font
       2. Scroll down to 'Font Ligatures'
-      3. click 'edit in settings.json'
-      4. set 'editor.fontLigatures' to `true` if not already set
+      3. Click 'edit in settings.json'
+      4. Set 'editor.fontLigatures' to `true` if not already set
 2. Install VSCode Extension: [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)
-3. Download this [style.css](/assets/misc/2021-01-24-vscode-dual-fonts/styles.css) (right
-   click link and chose 'save link as') to your desktop, or your preferred
-   location, just know the path to the file.
-   - You can modify this CSS file to suit your needs to change the font weight for
-     example. If you do, I suggest using the VS Code development tools by going
-     to Help>Toggle Developer Tools.
+3. Download this [style.css](/assets/misc/2021-01-24-vscode-dual-fonts/styles.css)
+   (right-click the link and chose 'save link as') to your desktop or a
+   preferred location; know the path to the file.
+   - You can modify this CSS file to suit your needs to change the font weight,
+     for example. If you want to, I suggest using the VS Code development tools
+     by going to Help>Toggle Developer Tools
 4. Main Font: If you are using a font other than JetBrains Mono
    1. Edit the styles.css
    2. Change `JetBrains Mono` to your preferred main font
@@ -82,9 +82,9 @@ The theme used (that has an option for the glow effect, which I enabled) is
          - Mac or Linux
             - Example "file:///Users/MyUserName/Desktop/style.css"
 7. Install the extension, [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums)
-8. In the command palette (view>command pallet) run `Reload Custom CSS and JS`
-9. In the command palette run `Fix Checksums: Apply`
-10. Restart VS Code by exiting, not reloading, VS Code and start it back up.
+8. In the command palette (view>command pallet), run `Reload Custom CSS and JS`
+9. In the command palette, run `Fix Checksums: Apply`
+10. Restart VS Code by exiting, not reloading, VS Code and, start it back up.
 
 I took some content from [An alternative to Operator Mono font](https://medium.com/@docodemore/an-alternative-to-operator-mono-font-6e5d040e1c7e)
 and [Multiple Fonts: Alternative to Operator Mono in VSCode](https://medium.com/@zamamohammed/multiple-fonts-alternative-to-operator-mono-in-vscode-7745b52120a0)
