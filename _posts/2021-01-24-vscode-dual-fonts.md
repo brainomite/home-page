@@ -15,8 +15,8 @@ image:
 
 I love the code ligatures of JetBrains Mono and Fira Code, but I was
 disappointed at the subtle italics. I also didn't want to shell out $199 for a
-[font](https://www.typography.com/fonts/operator/styles/operatormono). I,
-therefore, found a better option. Using two coding fonts with ligatures.
+font like [Operator Mono](https://www.typography.com/fonts/operator/styles/operatormono).
+I, therefore, found a better option. Using two coding fonts with ligatures.
 
 The theme used (that has an option for the glow effect, which I enabled) is
 [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
