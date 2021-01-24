@@ -28,7 +28,8 @@ The theme used (that has an option for the glow effect, which I enabled) is
 
 1. If not already installed, download and install desired fonts. I'm using
    [JetBrains Mono](https://www.jetbrains.com/lp/mono/)for my main font and [Victor Mono](https://rubjo.github.io/victor-mono/)
-   but feel free to use whatever you'd like. A lot of people like [Fira Code](https://github.com/tonsky/FiraCode#download--install)
+   for italics. However, feel free to use whatever combo you'd like. A lot of
+   people like [Fira Code](https://github.com/tonsky/FiraCode#download--install)
    instead of JetBrains Mono
    1. Unzip the downloaded archive
    2. Install the font
