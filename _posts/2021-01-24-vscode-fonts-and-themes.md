@@ -18,9 +18,10 @@ all day long. Why not set the icons, fonts, and theme to a style you like best?
 Your eyes will thank you!
 
 The cover image actually uses a combination of two fonts, [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-& [Script12 BT](https://www.dafontfree.net/freefonts-script12-bt-f141942.htm)! This is
+& [Script12 BT](https://www.dafontfree.net/freefonts-script12-bt-f141942.htm)! It also
 done using some trickery but I'll be sharing how in a how-to coming later, stay
-tuned!
+tuned! The theme is [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
+with the glow enabled.
 {:.note}
 
 Everything in this post is geared towards dark mode as that is my preference.
