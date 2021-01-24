@@ -1,0 +1,18 @@
+.type.storage,.type.storage.declaration, .storage.class.modifier, .mtki {
+  font-family: 'Script12 BT';
+}
+
+.type.storage.arrow.function {
+  font-family: 'JetBrains Mono'
+}
+
+.decorator.name, .decorator.punctuation:not(.block), .import.keyword {
+    font-family: 'Script12 BT';
+}
+.attribute-name {
+    font-family: 'Script12 BT';
+}
+
+.comment:not(.punctuation) {
+    font-family: Script12 BT;
+}
