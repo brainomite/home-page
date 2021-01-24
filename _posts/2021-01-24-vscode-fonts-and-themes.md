@@ -35,28 +35,30 @@ These will set icons for files and optionally folders.
 
 ### Themes
 
+
+#### [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+This is my preferred icon theme.
+{:.note}
+
+![default seti icons](/assets/img/posts/2021-01-24-vscode-fonts-and-themes/icons-material-theme.png)
+
+#### [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+
+![default seti icons](/assets/img/posts/2021-01-24-vscode-fonts-and-themes/icons-vscode-icons.png)
+
 #### Default Icons - Seti
 
-![default seti icons](/assets/img/posts/2021-01-23-vscode-fonts-and-themes/icons-default-seti.png)
+![default seti icons](/assets/img/posts/2021-01-24-vscode-fonts-and-themes/icons-default-seti.png)
 
 This one doesn't have icons for folders
 {:.figcaption}
 
-#### [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-
-This is my preferred icon theme
-{:.note}
-
-![default seti icons](/assets/img/posts/2021-01-23-vscode-fonts-and-themes/icons-material-theme.png)
-
-#### [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
-
-![default seti icons](/assets/img/posts/2021-01-23-vscode-fonts-and-themes/icons-vscode-icons.png)
-
 ## Fonts
 
-The two fonts used in this post are [Fira Code](https://github.com/tonsky/FiraCode)
-and [JetBrains Mono](https://www.jetbrains.com/lp/mono/).
+The two fonts used in this post are [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+and [Fira Code](https://github.com/tonsky/FiraCode). I recently switched to
+Jetbrains Mono.
 
 ### Ligatures
 
@@ -65,8 +67,8 @@ They are mono-spaced, meaning every character is the same width.
 But the main draw is that they support coding [ligatures](https://en.wikipedia.org/wiki/Orthographic_ligature#Programming_languages).
 
 <div class="juxtapose">
-    <img src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/fira-code-no-ligatures.png" data-label="No Ligatures"/>
-    <img src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/fira-code.png" data-label="Ligatures"/>
+    <img src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/fira-code-no-ligatures.png" data-label="No Ligatures"/>
+    <img src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/fira-code.png" data-label="Ligatures"/>
 </div>
 
 Comparison of Fira Code with and without ligatures enabled.
@@ -76,16 +78,16 @@ JetBrains Mono doesn't have as many ligatures as Fira Code
 {:.note}
 
 <div class="juxtapose">
-    <img src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/jetbrains-mono-no-ligatures.png" data-label="No Ligatures"/>
-    <img src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/jetbrains-mono.png" data-label="Ligatures"/>
+    <img src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/jetbrains-mono-no-ligatures.png" data-label="No Ligatures"/>
+    <img src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/jetbrains-mono.png" data-label="Ligatures"/>
 </div>
 
 Comparison of JetBrains Mono with and without ligatures
 {:.figcaption}
 
 <div class="juxtapose">
-    <img src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/jetbrains-mono.png" data-label="JetBrains Mono"/>
-    <img src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/fira-code.png" data-label="Fira Code"/>
+    <img src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/jetbrains-mono.png" data-label="JetBrains Mono"/>
+    <img src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/fira-code.png" data-label="Fira Code"/>
 </div>
 
 Comparison of Ligatures
@@ -96,8 +98,10 @@ Comparison of Ligatures
 1.  Download the font you prefer
 
     - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+    - [Fira Code](https://github.com/tonsky/FiraCode#download--install)
 
-2.  Unzip the archive and install the font
+2.  Unzip the downloaded archive
+3.  Install the font
     - Windows:
       1. Select all font files in the folder
       2. Right-click any of them
@@ -123,14 +127,14 @@ Comparison of Ligatures
 
 ## Themes
 
-My preferred theme is Lukin Theme
+My preferred theme is Lukin Theme.
 
 Some themes come with its own Icons and will override your selected icons. You
-can change it back after setting the theme if you want
+can change it back after setting the theme if you want.
 {:.note}
 
 Not all themes use italics for certain things i.e parameter declarations or HTML
-attribute names
+attribute names.
 {:.note}
 
 ### Update your theme
@@ -144,21 +148,36 @@ To change your theme:
 
 ### VS Code Themes I've Used in the Past
 
+#### [Lukin Theme](https://marketplace.visualstudio.com/items?itemName=lukinco.lukin-vscode-theme)
+
+This my preferred theme
+
+<div class="juxtapose">
+  <img
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/lukin-jetbrains-mono.png"
+    data-label="JetBrains Mono"
+  />
+  <img
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/lukin-fira-code.png"
+    data-label="Fira Code"
+  />
+</div>
+
 #### [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) with Glow Enabled
 
-My screenshots from here on in will use JetBrains Mono and this theme with the
-glow enabled
+My screenshots from here on in for sharing code will use JetBrains Mono with the
+glow enabled.
 
 The glow effect requires additional configurations
 {:.note}
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/synthwave-84-glow-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-fira-code.png"
     data-label="Fira Code"
   />
 </div>
@@ -167,24 +186,11 @@ The glow effect requires additional configurations
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/synthwave-84-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/synthwave-84-fira-code.png"
-    data-label="Fira Code"
-  />
-</div>
-
-#### [Lukin Theme](https://marketplace.visualstudio.com/items?itemName=lukinco.lukin-vscode-theme)
-
-<div class="juxtapose">
-  <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/lukin-jetbrains-mono.png"
-    data-label="JetBrains Mono"
-  />
-  <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/lukin-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-fira-code.png"
     data-label="Fira Code"
   />
 </div>
@@ -193,11 +199,11 @@ The glow effect requires additional configurations
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/snazzy-operator-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/snazzy-operator-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/snazzy-operator-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/snazzy-operator-fira-code.png"
     data-label="Fira Code"
   />
 </div>
@@ -206,11 +212,11 @@ The glow effect requires additional configurations
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/material-theme-darker-high-contrast-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/material-theme-darker-high-contrast-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/material-theme-darker-high-contrast-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/material-theme-darker-high-contrast-fira-code.png"
     data-label="Fira Code"
   />
 </div>
@@ -219,11 +225,11 @@ The glow effect requires additional configurations
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/material-theme-ocean-high-contrast-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/material-theme-ocean-high-contrast-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/material-theme-ocean-high-contrast-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/material-theme-ocean-high-contrast-fira-code.png"
     data-label="Fira Code"
   />
 </div>
@@ -232,11 +238,11 @@ The glow effect requires additional configurations
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/one-dark-pro-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/one-dark-pro-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/one-dark-pro-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/one-dark-pro-fira-code.png"
     data-label="Fira Code"
   />
 </div>
@@ -245,11 +251,11 @@ The glow effect requires additional configurations
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/one-monokai-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/one-monokai-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/one-monokai-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/one-monokai-fira-code.png"
     data-label="Fira Code"
   />
 </div>
@@ -258,11 +264,11 @@ The glow effect requires additional configurations
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/monokai-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/monokai-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/monokai-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/monokai-fira-code.png"
     data-label="Fira Code"
   />
 </div>
@@ -271,11 +277,11 @@ The glow effect requires additional configurations
 
 <div class="juxtapose">
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/monokai-dimmed-jetbrains-mono.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/monokai-dimmed-jetbrains-mono.png"
     data-label="JetBrains Mono"
   />
   <img
-    src="/assets/img/posts/2021-01-23-vscode-fonts-and-themes/monokai-dimmed-fira-code.png"
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/monokai-dimmed-fira-code.png"
     data-label="Fira Code"
   />
 </div>
