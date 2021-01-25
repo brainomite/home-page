@@ -11,8 +11,6 @@ image:
     1800w: /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover.png
     900w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,5x.png
     450w:  /assets/img/posts/2021-01-24-vscode-fonts-and-themes/cover@0,25x.png
-related_posts:
-  - /posts/2021-01-24-vscode-dual-fonts/
 ---
 
 I'm going to give some options for styling your vscode. We use VS Code daily,
