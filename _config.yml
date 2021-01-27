@@ -366,6 +366,11 @@ plugins:
 #     - https://twitter.com/<username>
 #     - https://github.com/<username>
 
+author:
+  social:
+    email:    hi@aaronyoung.dev
+    rss:      https://aaronyoung.dev/feed.xml
+
 # Jekyll Compose Defaults
 # ---------------------------------------------------------------------------------------
 
