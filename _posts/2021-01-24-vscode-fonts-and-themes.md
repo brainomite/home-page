@@ -17,11 +17,14 @@ I'm going to give some options for styling your vscode. We use VS Code daily,
 all day long. Why not set the icons, fonts, and theme to a style you like best?
 Your eyes will thank you!
 
+I will edit this post as I find other themes I like.
+{:.note}
+
 The cover image actually uses a combination of two fonts, [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 & [Victor Mono](https://rubjo.github.io/victor-mono/)! It is done using some
 trickery [read about it here](/blog/2021-01-24-vscode-dual-fonts/). The theme is
-[SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
-with the glow enabled.
+a theme I created [Dark SynthWave '84](https://marketplace.visualstudio.com/items?itemName=aaronYoung.dark-synthwave-vscode)
+with the glow enabled, not the default option of it off.
 {:.note}
 
 Everything in this post is geared towards dark mode as that is my preference.
@@ -161,9 +164,40 @@ To change your theme:
 
 ### VS Code Themes I've Used in the Past
 
-#### [Lukin Theme](https://marketplace.visualstudio.com/items?itemName=lukinco.lukin-vscode-theme)
+#### [Dark Synthwave '84](https://marketplace.visualstudio.com/items?itemName=aaronYoung.dark-synthwave-vscode) with Glow Disabled
 
-This my preferred theme
+This is a theme that your truly created. This is also my preferred theme,
+naturally
+
+<div class="juxtapose">
+  <img
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/dark-synthwave-84-jetbrains-mono-no-glow.png"
+    data-label="JetBrains Mono"
+  />
+  <img
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/dark-synthwave-84-fira-code-no-glow.png"
+    data-label="Fira Code"
+  />
+</div>
+
+#### [Dark Synthwave '84](https://marketplace.visualstudio.com/items?itemName=aaronYoung.dark-synthwave-vscode) with Glow Enabled
+
+The glow effect requires additional configurations see the description of the
+theme.
+{:.note}
+
+<div class="juxtapose">
+  <img
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/dark-synthwave-84-jetbrains-mono-glow.png"
+    data-label="JetBrains Mono"
+  />
+  <img
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/dark-synthwave-84-fira-code-glow.png"
+    data-label="Fira Code"
+  />
+</div>
+
+#### [Lukin Theme](https://marketplace.visualstudio.com/items?itemName=lukinco.lukin-vscode-theme)
 
 <div class="juxtapose">
   <img
@@ -176,12 +210,26 @@ This my preferred theme
   />
 </div>
 
+#### [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) with Glow Disabled
+
+<div class="juxtapose">
+  <img
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-jetbrains-mono.png"
+    data-label="JetBrains Mono"
+  />
+  <img
+    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-fira-code.png"
+    data-label="Fira Code"
+  />
+</div>
+
 #### [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) with Glow Enabled
 
 My screenshots from here on in for sharing code will use JetBrains Mono with the
 glow enabled.
 
-The glow effect requires additional configurations
+The glow effect requires additional configurations see the description of the
+theme.
 {:.note}
 
 <div class="juxtapose">
@@ -191,19 +239,6 @@ The glow effect requires additional configurations
   />
   <img
     src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-glow-fira-code.png"
-    data-label="Fira Code"
-  />
-</div>
-
-#### [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) without Glow Enabled
-
-<div class="juxtapose">
-  <img
-    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-jetbrains-mono.png"
-    data-label="JetBrains Mono"
-  />
-  <img
-    src="/assets/img/posts/2021-01-24-vscode-fonts-and-themes/synthwave-84-fira-code.png"
     data-label="Fira Code"
   />
 </div>
