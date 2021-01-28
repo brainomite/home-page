@@ -33,10 +33,10 @@ The following commands will:
 3. Configure git to use VS Code as the default commit message editor
 
 Copy the following into your terminal or git bash in one shot, its all one
-command chain
+command chain and press enter to run it.
 
 This presumes you are able to start VS Code in a terminal with the command
-`code`
+`code`.
 {:.note}
 
 ```bash
