@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuring Git to Better our lives
+title: Configuring Git to Better our Lives
 description: >
   I give directions for setting up a git commit template & using VS Code for
   commit messages
@@ -27,8 +27,8 @@ Only follow this post if you have Visual Studio Code
 The following commands will:
 
 1. Download this
-   [git template](https://gist.github.com/adeekshith/cd4c95a064977cdc6c50) to
-   your `~` (root) folder
+   [git template](https://gist.github.com/adeekshith/cd4c95a064977cdc6c50) as
+   `~/.git-commit-template.txt`
 2. Configure git to use the template downloaded
 3. Configure git to use VS Code as the default commit message editor
 
