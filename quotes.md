@@ -7,7 +7,7 @@ cover: true
 
 <style>
   .figcaption {
-    text-align: left;
+    text-align: right;
   }
 </style>
 
@@ -16,7 +16,7 @@ cover: true
 
 >“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”
 {: #with-an-id}
-Excerpt From: Martin Fowler. “Refactoring: Improving the Design of Existing Code, Second Edition” .
+Martin Fowler, “Refactoring: Improving the Design of Existing Code, Second Edition” .
 {:.figcaption}
 
 > "Programs are meant to be read by humans and only incidentally for computers to execute."
@@ -26,17 +26,17 @@ Donald Knuth
 
 > “You should name a variable using the same care with which you name a first-born child."
 
-Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
+Robert C. Martin, "Clean Code: A Handbook of Agile Software Craftsmanship"
 {:.figcaption}
 
 > "Don’t Use a Comment When You Can Use a Function or a Variable"
 
-Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
+Robert C. Martin, "Clean Code: A Handbook of Agile Software Craftsmanship"
 {:.figcaption}
 
 > “Tools amplify your talent. The better your tools, and the better you know how to use them, the more productive you can be.”
 
-Andrew Hunt, The Pragmatic Programmer: From Journeyman to Master"
+Andrew Hunt, "The Pragmatic Programmer: From Journeyman to Master"
 {:.figcaption}
 
 > "Each generation stands on the shoulders of those who have gone before them,"
