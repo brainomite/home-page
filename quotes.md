@@ -5,6 +5,12 @@ sitemap: true
 cover: true
 ---
 
+<style>
+  .figcaption {
+    text-align: left;
+  }
+</style>
+
 * this unordered seed list will be replaced by the toc
 {:toc}
 
