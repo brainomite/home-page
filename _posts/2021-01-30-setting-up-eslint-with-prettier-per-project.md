@@ -83,14 +83,14 @@ In all 3 of the following variations of the directions we will:
    2. Turn on the rule that a variable can't be less than 2 characters
    3. Make an exception for the `_` variable as certain packages like `lodash`
       and `underscore` have conventionally been assigned to the  `_`  variable.
-4. Reload or restart VS Code, sometimes the changes don't take effect untill you
+4. Reload or restart VS Code, sometimes the changes don't take effect until you
    do.
 
 At the end of the post I have [all 3 variations](#gist-from-github) of the
 ESLint config files that we will be using which I suggest taking a look at.
 
-Choose the correct environment and copy single command chain (copy and paste it
-all) and run it in git bash or the terminal
+Choose the correct environment and copy the single chained command chain by
+clicking the button
 
 `&&` will cause a command to wait on the prior command then execute. `\` will
 allow the command to continue on the next line
