@@ -72,8 +72,8 @@ We will be using
 ## Installation instructions
 
 1. Choose the correct environment and copy the single chained command chain by
-   clicking the button. Run the command from the in **_Git Bash_** while in the
-   project's root
+   clicking the button. Run the command from the in **_Git Bash_** or the
+   Mac terminal while in the project's root
 2. If VS Code is running, reload or restart VS Code, sometimes the changes won't
    take effect until you do.
 
