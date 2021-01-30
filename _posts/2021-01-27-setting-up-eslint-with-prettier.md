@@ -13,17 +13,24 @@ image:
     450w: /assets/img/posts/2021-01-27-setting-up-eslint-with-prettier/cover@0,25x.png
 ---
 
-This post is intended primarily for students at [Thinkful](https://www.thinkful.com/).
+This post is being recreated.
 
-So there is this extension, [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint),
+<strike>
+
+This post is intended primarily for students at
+[Thinkful](https://www.thinkful.com/).
+
+So there is this extension,
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint),
 with over twelve million installs, is the most popular Javascript extension.
 [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
 which you should have installed at Thinkful’s suggestion, happens to be the
 second most popular VS Code extension. These two are popular for a good reason!
 
-ESLint will do what we call code [linting](<https://en.wikipedia.org/wiki/Lint_(software)>)
-actively, as you code, check your syntax, find common coding bugs, and
-additionally enforce styles. All of the ESLint options are highly configurable.
+ESLint will do what we call code
+[linting](<https://en.wikipedia.org/wiki/Lint_(software)>) actively, as you
+code, check your syntax, find common coding bugs, and additionally enforce
+styles. All of the ESLint options are highly configurable.
 
 It will:
 
@@ -39,8 +46,10 @@ takes precedence.
 
 Here are the setup instructions with my suggested configuration:
 
-1.  If not already added to your VS Code, install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-    and/or [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+1.  If not already added to your VS Code, install
+    [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+    and/or
+    [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 2.  run this command to install the dependencies globally on your machine: 
     `npm i -g eslint eslint-config-prettier eslint-plugin-prettier prettier`
 3.  Create and open for editing a global ESLint config file, which will only be
@@ -78,5 +87,8 @@ override the global settings. Lots of preexisting projects provide the
 `.eslintrc` file in their repositories.
 
 There are many pre-configured ESLint style configs that people use, if they
-don't create their own You can see some well known ESLint style rules [here](https://github.com/dustinspecker/awesome-eslint#configs-by-well-known-companiesorganizations).
+don't create their own You can see some well known ESLint style rules
+[here](https://github.com/dustinspecker/awesome-eslint#configs-by-well-known-companiesorganizations).
 {:.note}
+
+</strike>
