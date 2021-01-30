@@ -102,6 +102,7 @@ Downloads
 [browser-pre-react.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-browser-pre-react-eslint-js)
 and saves it as `.eslintrc.js`
 
+<button id="pre-react-btn" onClick="codeCopyHandler('pre-react-code', 'pre-react-btn')">Copy pre-react command</button>
 ```bash
 npm i -D prettier eslint eslint-config-airbnb-base eslint-config-prettier \
          eslint-plugin-import \
@@ -109,6 +110,7 @@ npm i -D prettier eslint eslint-config-airbnb-base eslint-config-prettier \
 "https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/d9e331cc63a943298132ab7ee4a150330d636a37/browser-pre-react.eslintrc.js" \
 --output .eslintrc.js
 ```
+{: #pre-react-code}
 
 ### React
 
@@ -119,6 +121,8 @@ Downloads
 [react.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-react-eslintrc-js)
 and saves it as `.eslintrc.js`
 
+<button id="react-btn" onClick="codeCopyHandler('react-code', 'react-btn')">Copy pre-react command</button>
+
 ```bash
 npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
          eslint-plugin-import eslint-plugin-jsx-a11y \
@@ -127,12 +131,15 @@ npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
 "https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/d9e331cc63a943298132ab7ee4a150330d636a37/react.eslintrc.js" \
 --output .eslintrc.js
 ```
+{: #react-code}
 
 ### Backend with Node
 
 Downloads
 [backend.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-backend-eslintrc-js)
 and saves it as `.eslintrc.js`
+
+<button id="backend-btn" onClick="codeCopyHandler('backend-code', 'backend-btn')">Copy pre-react command</button>
 
 ```bash
 npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
@@ -141,9 +148,24 @@ npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
 "https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/d9e331cc63a943298132ab7ee4a150330d636a37/backend.eslintrc.js" \
 --output .eslintrc.js
 ```
+{: #backend-code}
+
 
 ## Gist from GitHub
 <script src="https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9.js"></script>
+
+
+<script>
+function codeCopyHandler(codeId, buttonId) {
+  const code = document.querySelector(`#${codeId} code`).innerText;
+  navigator.clipboard.writeText(code);
+  const btn = document.querySelector("#" + buttonId);
+  const oldText = btn.innerText;
+  btn.innerText = "copied!";
+  setTimeout(() => (btn.innerText = oldText), 1500);
+}
+
+</script>
 
 <style>
 /*!
