@@ -102,7 +102,7 @@ Downloads
 [browser-pre-react.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-browser-pre-react-eslint-js)
 and saves it as `.eslintrc.js`
 
-<button id="pre-react-btn" onClick="codeCopyHandler('pre-react-code', 'pre-react-btn')">Copy pre-react command</button>
+<button id="pre-react-btn" onClick="codeCopyHandler('pre-react-code', 'pre-react-btn')">Click to Copy!</button>
 ```bash
 npm i -D prettier eslint eslint-config-airbnb-base eslint-config-prettier \
          eslint-plugin-import \
@@ -121,7 +121,7 @@ Downloads
 [react.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-react-eslintrc-js)
 and saves it as `.eslintrc.js`
 
-<button id="react-btn" onClick="codeCopyHandler('react-code', 'react-btn')">Copy pre-react command</button>
+<button id="react-btn" onClick="codeCopyHandler('react-code', 'react-btn')">Click to Copy!</button>
 
 ```bash
 npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
@@ -139,7 +139,7 @@ Downloads
 [backend.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-backend-eslintrc-js)
 and saves it as `.eslintrc.js`
 
-<button id="backend-btn" onClick="codeCopyHandler('backend-code', 'backend-btn')">Copy pre-react command</button>
+<button id="backend-btn" onClick="codeCopyHandler('backend-code', 'backend-btn')">Click to Copy!</button>
 
 ```bash
 npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
