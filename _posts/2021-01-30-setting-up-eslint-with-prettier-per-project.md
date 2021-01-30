@@ -100,9 +100,9 @@ ESLint config files that we will be using which I suggest taking a look at.
 
 ### Pre-React
 
-Downloads
-[browser-pre-react.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-browser-pre-react-eslint-js)
-and saves it as `.eslintrc.js`
+In addition to installing NPM packages, this command will auto download
+`browser-pre-react.eslintrc.js`, which you can find below in the
+[Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
 
 <button id="pre-react-btn" onClick="codeCopyHandler('pre-react-code', 'pre-react-btn')">Click to Copy!</button>
 ```bash
@@ -119,9 +119,9 @@ npm i -D prettier eslint eslint-config-airbnb-base eslint-config-prettier \
 Having warnings during install of these packages are normal
 {:.note}
 
-Downloads
-[react.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-react-eslintrc-js)
-and saves it as `.eslintrc.js`
+In addition to installing NPM packages, this command will auto download
+`react.eslintrc.js`, which you can find below in the
+[Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
 
 <button id="react-btn" onClick="codeCopyHandler('react-code', 'react-btn')">Click to Copy!</button>
 
@@ -137,9 +137,9 @@ npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
 
 ### Backend with Node
 
-Downloads
-[backend.eslintrc.js](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-backend-eslintrc-js)
-and saves it as `.eslintrc.js`
+In addition to installing NPM packages, this command will auto download
+`backend.eslintrc.js`, which you can find below in the
+[Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
 
 <button id="backend-btn" onClick="codeCopyHandler('backend-code', 'backend-btn')">Click to Copy!</button>
 
