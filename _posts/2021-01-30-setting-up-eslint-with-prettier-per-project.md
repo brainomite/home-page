@@ -71,30 +71,32 @@ We will be using
 
 ## Installation instructions
 
-In all 3 of the following variations of the directions we will:
-
-1. Install Prettier and ESLint npm packages along with required packages to make
-   them work together and in the environment selected.
-2. Install the
-   [AirBnB's Style](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
-   npm package and related packages
-3. Download the appropriate `.eslintrc.js` file which will:
-   1. Configure ESLint to work with Prettier and AirBnB style guide
-   2. Turn on the rule that a variable can't be less than 2 characters
-   3. Make an exception for the `_` variable as certain packages like `lodash`
-      and `underscore` have conventionally been assigned to the  `_`  variable.
-4. Reload or restart VS Code, sometimes the changes don't take effect until you
-   do.
-
-At the end of the post I have [all 3 variations](#gist-from-github) of the
-ESLint config files that we will be using which I suggest taking a look at.
-
-Choose the correct environment and copy the single chained command chain by
-clicking the button
+1. Choose the correct environment and copy the single chained command chain by
+   clicking the button. Run the command from the in **_Git Bash_** while in the
+   project's root
+2. If VS Code is running, reload or restart VS Code, sometimes the changes won't
+   take effect until you do.
 
 `&&` will cause a command to wait on the prior command then execute. `\` will
 allow the command to continue on the next line
 {:.note}
+
+In all 3 of the following variations of the command will:
+
+- Install Prettier and ESLint npm packages along with required packages to make
+  them work together and in the environment selected.
+- Install the
+  [AirBnB's Style](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+  npm package and related packages
+- Download the appropriate `.eslintrc.js` file which will:
+   - Configure ESLint to work with Prettier and AirBnB style guide
+   - Turn on the rule that a variable can't be less than 2 characters
+   - Make an exception for the `_` variable as certain packages like `lodash`
+      and `underscore` have conventionally been assigned to the  `_`  variable.
+
+At the end of the post I have [all 3 variations](#gist-from-github) of the
+ESLint config files that we will be using which I suggest taking a look at.
+
 
 ### Pre-React
 
