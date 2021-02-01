@@ -17,6 +17,11 @@ image:
 This post is intended primarily for students at
 [Thinkful](https://www.thinkful.com/).
 
+Edit - 2/1/2021
+{:.faded}
+ - Added a prerequisite step, #3, adding a setting to settings.json
+{:.faded}
+
 This post just shows you how to set up you class projects, in the future, I will
 be creating a post so you can set up Prettier and ESLint to work together the
 way you want for your own projects. Which, isn't actually that hard, or time
@@ -64,10 +69,19 @@ We will be using
     [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
     and/or
     [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-2.  Optionally, let us configure VS Code to use code formatters on save. go to
+2.  Let us configure VS Code to use code formatters on save. go to
     Settings>Text Editor>Formatting and make sure that `Format On Save` has a
     check
-3.  Ensure your project has a `package.json`
+3.  Let us configure VS Code to fix eslint issues using ES Lint's extension by
+    adding the following to VS Code's `settings.json`
+
+    ```json
+    "editor.codeActionsOnSave": {
+      // For ESLint
+      "source.fixAll.eslint": true,
+    }
+    ```
+4.  Ensure your project has a `package.json`
 
 ## Installation instructions
 
