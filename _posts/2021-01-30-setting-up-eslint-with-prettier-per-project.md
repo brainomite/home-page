@@ -72,8 +72,8 @@ We will be using
 2.  Let us configure VS Code to use code formatters on save. go to
     Settings>Text Editor>Formatting and make sure that `Format On Save` has a
     check
-3.  Let us configure VS Code to fix eslint issues using ES Lint's extension by
-    adding the following to VS Code's `settings.json`
+3.  Let us configure VS Code to fix some identified eslint issues by adding the
+    following to VS Code's `settings.json`
 
     ```json
     "editor.codeActionsOnSave": {
