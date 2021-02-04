@@ -11,11 +11,14 @@ cover: true
   }
 </style>
 
-* this unordered seed list will be replaced by the toc
-{:toc}
+<!-- * this unordered seed list will be replaced by the toc
+{:toc} -->
+
+>“The one skill that separates good programmers from bad programmers is attention to detail.”
+Zed A. Shaw, “Learn Python 3 The Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code”
+{:.figcaption}
 
 >“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”
-{: #with-an-id}
 Martin Fowler, “Refactoring: Improving the Design of Existing Code, Second Edition” .
 {:.figcaption}
 
