@@ -118,7 +118,6 @@ In addition to installing NPM packages, this command will auto download
 `browser-pre-react.eslintrc.js`, which you can find below in the
 [Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
 
-<button id="pre-react-btn" onClick="codeCopyHandler('pre-react-code', 'pre-react-btn')">Click to Copy!</button>
 ```bash
 npm i -D prettier eslint eslint-config-airbnb-base eslint-config-prettier \
          eslint-plugin-import \
@@ -127,6 +126,7 @@ npm i -D prettier eslint eslint-config-airbnb-base eslint-config-prettier \
 --output .eslintrc.js
 ```
 {: #pre-react-code}
+<button id="pre-react-btn" onClick="codeCopyHandler('pre-react-code', 'pre-react-btn')">Click to Copy!</button>
 
 ### React
 
@@ -137,17 +137,17 @@ In addition to installing NPM packages, this command will auto download
 `react.eslintrc.js`, which you can find below in the
 [Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
 
-<button id="react-btn" onClick="codeCopyHandler('react-code', 'react-btn')">Click to Copy!</button>
 
 ```bash
 npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
          eslint-plugin-import eslint-plugin-jsx-a11y \
          eslint-plugin-react-hooks eslint-config-prettier \
 && curl \
-"https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/d9e331cc63a943298132ab7ee4a150330d636a37/react.eslintrc.js" \
+"https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/ec3980a19e92df1cef5f007260451074970df153/react.eslintrc.js" \
 --output .eslintrc.js
 ```
 {: #react-code}
+<button id="react-btn" onClick="codeCopyHandler('react-code', 'react-btn')">Click to Copy!</button>
 
 ### Backend with Node
 
@@ -155,7 +155,6 @@ In addition to installing NPM packages, this command will auto download
 `backend.eslintrc.js`, which you can find below in the
 [Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
 
-<button id="backend-btn" onClick="codeCopyHandler('backend-code', 'backend-btn')">Click to Copy!</button>
 
 ```bash
 npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
@@ -165,6 +164,7 @@ npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
 --output .eslintrc.js
 ```
 {: #backend-code}
+<button id="backend-btn" onClick="codeCopyHandler('backend-code', 'backend-btn')">Click to Copy!</button>
 
 
 ## Gist from GitHub
