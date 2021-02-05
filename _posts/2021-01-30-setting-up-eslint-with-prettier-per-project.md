@@ -17,16 +17,24 @@ image:
 This post is intended primarily for students at
 [Thinkful](https://www.thinkful.com/).
 
-Edit - 2/1/2021 {:.faded}
 
-- Added a prerequisite step, #3, adding a setting to settings.json {:.faded}
+| Date | Change |
+|-----------------|:-----------:|
+| 2/1/2021 | Added a prerequisite step, #3, adding a setting to settings.json |
+| 2/4/2021 | 1. Updated React GitHub gist, 2. Created edits table |
+{:.stretch-table .faded}
+edits
+{:.figcaption}
+
 
 This post just shows you how to set up you class projects, in the future, I will
 be creating a post so you can set up Prettier and ESLint to work together the
 way you want for your own projects. Which, isn't actually that hard, or time
-consuming. For now we want to focus on good practices. {:.note}
+consuming. For now we want to focus on good practices.
+{:.note}
 
-1. this unordered seed list will be replaced by the toc {:toc}
+1. this unordered seed list will be replaced by the toc
+{:toc}
 
 So there is this extension,
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint),
@@ -57,7 +65,8 @@ There are many pre-configured ESLint style configs that people use, if they
 don't create their own. You can see some well known ESLint style rules
 [here](https://github.com/dustinspecker/awesome-eslint#configs-by-well-known-companiesorganizations).
 We will be using
-[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) {:.note}
+[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+{:.note}
 
 ## Prerequisites
 
@@ -88,7 +97,8 @@ We will be using
    take effect until you do.
 
 `&&` will cause a command to wait on the prior command then execute. `\` will
-allow the command to continue on the next line {:.note}
+allow the command to continue on the next line
+{:.note}
 
 In all 3 of the following variations of the command will:
 
@@ -119,14 +129,15 @@ npm i -D prettier eslint eslint-config-airbnb-base eslint-config-prettier \
 "https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/d9e331cc63a943298132ab7ee4a150330d636a37/browser-pre-react.eslintrc.js" \
 --output .eslintrc.js
 ```
-
 {: #pre-react-code}
+
 <button id="pre-react-btn" onClick="codeCopyHandler('pre-react-code', 'pre-react-btn')">Click
 to Copy!</button>
 
 ### React
 
-Having warnings during install of these packages are normal {:.note}
+Having warnings during install of these packages are normal
+{:.note}
 
 In addition to installing NPM packages, this command will auto download
 `react.eslintrc.js`, which you can find below in the
@@ -140,8 +151,8 @@ npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
 "https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/d3426bfa31a78ec68f7df36018b0f2aedfe51709/react.eslintrc.js" \
 --output .eslintrc.js
 ```
-
 {: #react-code}
+
 <button id="react-btn" onClick="codeCopyHandler('react-code', 'react-btn')">Click
 to Copy!</button>
 
@@ -158,8 +169,8 @@ npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
 "https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/d9e331cc63a943298132ab7ee4a150330d636a37/backend.eslintrc.js" \
 --output .eslintrc.js
 ```
-
 {: #backend-code}
+
 <button id="backend-btn" onClick="codeCopyHandler('backend-code', 'backend-btn')">Click
 to Copy!</button>
 
