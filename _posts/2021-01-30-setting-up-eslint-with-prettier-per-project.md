@@ -133,9 +133,6 @@ npm i -D prettier eslint eslint-config-airbnb-base eslint-config-prettier \
 ```
 {: #pre-react-code}
 
-<button id="pre-react-btn" onClick="codeCopyHandler('pre-react-code', 'pre-react-btn')">Click
-to Copy!</button>
-
 ### React
 
 Having warnings during install of these packages are normal
@@ -156,9 +153,6 @@ npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
 ```
 {: #react-code}
 
-<button id="react-btn" onClick="codeCopyHandler('react-code', 'react-btn')">Click
-to Copy!</button>
-
 ### Backend with Node
 
 In addition to installing NPM packages, this command will auto download
@@ -174,9 +168,6 @@ npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
 --output .eslintrc.js
 ```
 {: #backend-code}
-
-<button id="backend-btn" onClick="codeCopyHandler('backend-code', 'backend-btn')">Click
-to Copy!</button>
 
 ## Gist from GitHub
 
