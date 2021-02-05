@@ -174,7 +174,7 @@ npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
 <script src="https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9.js"></script>
 
 
-/* https://github.com/lonekorean/gist-syntax-themes */
 <style>
+/* https://github.com/lonekorean/gist-syntax-themes */
 @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css');
 </style>
