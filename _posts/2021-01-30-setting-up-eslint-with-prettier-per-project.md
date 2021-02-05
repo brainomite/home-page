@@ -148,7 +148,7 @@ npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
          eslint-plugin-import eslint-plugin-jsx-a11y \
          eslint-plugin-react-hooks eslint-config-prettier \
 && curl \
-"https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/d3426bfa31a78ec68f7df36018b0f2aedfe51709/react.eslintrc.js" \
+"https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/231beda663e8af74f965987fb1bb197d30b6dfd1/react.eslintrc.js" \
 --output .eslintrc.js
 ```
 {: #react-code}
