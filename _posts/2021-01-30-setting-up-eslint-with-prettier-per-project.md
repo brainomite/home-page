@@ -23,9 +23,9 @@ This post is intended for students at
 | 2/1/2021 | Added a prerequisite step, #3, adding a setting to settings.json |
 | 2/4/2021 | 1. Updated React GitHub gist, 2. Created edits table |
 | 2/5/2021 | 1. Updated the copy buttons 2. Gave each script a file name |
-| 2/6/2021 | Updated react gist for download as I added more rules to turn off |
+| 2/6/2021 | 1. Updated react gist to download as I added more rules to turn off 2. Removed the embedded gist, and linked directly to gist |
 {:.stretch-table .faded}
-edits
+edits to this post
 {:.figcaption}
 
 
@@ -121,8 +121,9 @@ ESLint config files that we will be using which I suggest taking a look at.
 ### Pre-React
 
 In addition to installing NPM packages, this command will auto download
-`browser-pre-react.eslintrc.js`, which you can find below in the
-[Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
+`browser-pre-react.eslintrc.js`, which you can find in this
+[gist on Github](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-browser-pre-react-eslintrc-js)
+and saves it as `.eslintrc.js`
 
 ```bash
 # file: "pre-react.sh"
@@ -140,8 +141,9 @@ Having warnings during install of these packages are normal
 {:.note}
 
 In addition to installing NPM packages, this command will auto download
-`react.eslintrc.js`, which you can find below in the
-[Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
+`react.eslintrc.js`, which you can find in this
+[gist on GitHub](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-react-eslintrc-js)
+and saves it as `.eslintrc.js`
 
 ```bash
 # file: "react.sh"
@@ -157,8 +159,9 @@ npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
 ### Backend with Node
 
 In addition to installing NPM packages, this command will auto download
-`backend.eslintrc.js`, which you can find below in the
-[Gist From Github](#gist-from-github) section and saves it as `.eslintrc.js`
+`backend.eslintrc.js`, which you can find below in this
+[gist on Github](https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9#file-backend-eslintrc-js)
+and saves it as `.eslintrc.js`
 
 ```bash
 # file: "backend.sh"
@@ -169,13 +172,3 @@ npm i -D prettier eslint-config-airbnb-base eslint eslint-plugin-import \
 --output .eslintrc.js
 ```
 {: #backend-code}
-
-## Gist from GitHub
-
-<script src="https://gist.github.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9.js"></script>
-
-
-<style>
-/* https://github.com/lonekorean/gist-syntax-themes */
-@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css');
-</style>
