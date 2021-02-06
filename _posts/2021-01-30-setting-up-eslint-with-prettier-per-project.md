@@ -22,7 +22,8 @@ This post is intended for students at
 |-----------------|:-----------:|
 | 2/1/2021 | Added a prerequisite step, #3, adding a setting to settings.json |
 | 2/4/2021 | 1. Updated React GitHub gist, 2. Created edits table |
-| 2/5/2021 | 1. Updated the copy buttons 2. Gave each script a file name|
+| 2/5/2021 | 1. Updated the copy buttons 2. Gave each script a file name |
+| 2/6/2021 | Updated react gist for download as I added more rules to turn off |
 {:.stretch-table .faded}
 edits
 {:.figcaption}
@@ -148,7 +149,7 @@ npm i -D prettier eslint-plugin-react eslint-config-airbnb eslint \
          eslint-plugin-import eslint-plugin-jsx-a11y \
          eslint-plugin-react-hooks eslint-config-prettier \
 && curl \
-"https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/231beda663e8af74f965987fb1bb197d30b6dfd1/react.eslintrc.js" \
+"https://gist.githubusercontent.com/brainomite/d259b1d17b1d70959ab5c6f6ecd019a9/raw/88d1a0361b1bf5120361a4b664ae0ba73167f03c/react.eslintrc.js" \
 --output .eslintrc.js
 ```
 {: #react-code}
