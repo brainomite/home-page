@@ -61,7 +61,7 @@ author1:
     # paypal:          <username>
     # keybase          <username>
     # medium: brainomite
-    download: /assets/Resume-Aaron_Young.pdf
+    # download: /assets/Resume-Aaron_Young.pdf
 # Another author (optional)
 author2:
   name: <firtname> <lastname>

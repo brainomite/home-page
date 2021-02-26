@@ -5,8 +5,8 @@ basics:
   name: "Aaron Young"
   label: "Software Engineer"
   picture: "assets/img/logo.png"
-  email: "hi@aaronyoung.dev"
-  phone: "(917) 740-5172"
+  email: "aaron.young@byfreeagency.com"
+  phone: "(917) 882-1044"
   website: "https://aaronyoung.dev"
   # summary: >
   #   Richard hails from Tulsa.
@@ -31,9 +31,6 @@ basics:
     - network: "LinkedIn"
       username: "Aaron Young"
       url: "https://www.linkedin.com/in/aaron-young2018"
-    - network: "Medium"
-      username: "Brainomite"
-      url: "https://medium.com/@brainomite"
 work:
   - company: "Thinkful Online Learning"
     position: "Student Mentor"
@@ -41,71 +38,63 @@ work:
     startDate: "2020-10-7"
     endDate: ""
     summary: >
-      An online-only coding boot-camp. We teach many subjects including full-stack web development.
+      Online software development and product management bootcamp; subsidiary of Chegg ($CHGG).
     highlights:
-      - "Mentor students one on one via video sessions covering topics including HTML/CSS, Javascript, jQuery, NodeJS, PostgreSQL, Express, React"
-  - company: "Pinpoint Technologies Too, LLC"
-    position: "Software Engineer"
-    startDate: "2011-1-1"
+      - Serve as mentor to students, offering 1:1 video guidance for code improvements, project implementation,
+        review of complex technical concepts, & supplemental curriculum including HTML/CSS, Javascript,
+        Object-Oriented Programming, Node.JS, SQL, Express.JS and React.JS
+  - company: "Self-Employed – New York, NY"
+    position: "Web Developer"
+    startDate: "2018-3-1"
     endDate: ""
     summary: >
       Pinpoint Technologies manages creditor's portfolios as well as analyze potential purchases.
     highlights:
-      - "Designed and operated tools to analyze potential portfolio purchases and to monitor performances of existing portfolios - Node.js, Express, Nunjucks, PostgreSQL"
-  - company: "Stephen Einstein and Associates, PC"
-    position: "Software Engineer"
-    website: "https://stepheneinstein.com"
-    startDate: "2015-9-1"
-    endDate: "2017-10-1"
-    summary: >
-      Stephen Einstein and Associates is a law firm specializing in servicing the needs of creditors.
-      Their main specialization is bridging the communication gap between creditors and hard to find consumers.
-    highlights:
-      - "Monitored and managed all technical assets physically on-site and in AWS"
-      - "Engineered a replacement for the firm's line of business’s flawed
-        statute of limitations validator reducing the firm’s chance of being sued
-        by bringing it in line with New York specific laws"
-      - "Increased efficiency two-fold and reduced business expenses and staff
-        by creating tools to export the data from Mel S Harris’ proprietary
-        database system to allow for a migration."
-  - company: "Mel S Harris and Associates, LLC"
+      - Lead development of hotline phone system for service group network (Mutual Aid Society), leveraging
+        Airtable front-end, Node.js & Express.JS backend, & Twilio API to connect volunteers to callers
+      - Develop MVP for online disposable email service (Begone Email), leveraging RESTful API on backend,
+        custom SMTP server for email receive, and document storage via MongoDB
+      - Created NPM package utilizing Node.JS to create a CLI utility configuring ESLint & Prettier together
+      - Built AHEM monster to create disposable emails, eliminating spam from user’s inbox
+  - company: "Stephen Einstein & Associates P.C. – New York, NY"
     position: "Software Engineer"
     startDate: "2002-5-1"
-    endDate: "2015-9-1"
+    endDate: "2017-10-1"
     summary: >
-      Mel S Harris was a a law firm specializing in servicing the needs of creditors.
-      It was acquired in 2015 by Stephen Einstein and Associates, PC.
+      Law firm specializing in creditor's rights and debt collection
     highlights:
-      - "Pioneered an automation solution to enable attorneys to load up the
-        correct documentation automatically, increasing their efficiency by 4
-        fold. - Visual Basic 6, MySQL"
-      - "Devised a proprietary automated dialer that can accommodate up to 24
-        simultaneous calls and integrated with a PBX (internal phone system),
-        improving productivity by at least 50%. - Visual Basic 6, MySQL,
-        telephony tech"
-      - "Reduced our backup times from seventy six hours on average to ten by
-        implementing a proprietary document storage database - Visual Basics 6,
-        MySql"
-volunteer:
-  - organization: "Mutual Aid NYC"
-    position: "Software Engineer"
-    website: "https://mutualaid.nyc/"
-    startDate: "2020-03-01"
-    endDate: ""
-    summary: "An organization supporting other hyper-localized mutual aid organizations across the Tri-State"
+      - Oversaw all backend architecture and programming for financial and legal information database,
+        including asset + document management and cloud storage + backup
+      - Spearheaded database merger and network infrastructure integration following acquisition of rival law
+        firm, including physical server relocation and related IT infrastructure
+      - Developed research tool to enable quick look-up of statute-of-limitations laws, enabling legal teams to
+        evaluate ever-changing policies and avoid legal liability
+      - Launched proprietary automated dialer system, integrating with internal PBX phone system to
+        accommodate 24 simultaneous calls, improving productivity 50%+ and saving 80% in subscription fees
+      - Led development of automated document management system, allowing attorneys to quickly upload, tag,
+        and retrieve legal documents, increasing law-firm productivity by 400%
+      - Implemented Visual Basics 6 & MySQL-based proprietary document storage solution, reducing weekly
+        backup times from 76 hours to 10 hours on average
+  - company: "Pinpoint Technologies Too – New York, NY"
+    position: "Software Engineer (Contract)"
+    startDate: "2002-5-1"
+    endDate: "2017-10-1"
+    summary: >
+      Debt buyer and collection agency
     highlights:
-      - "Designed and implemented their hotline system - NodeJS, Twilio,
-        Airtable"
+    - Designed and operated tools to analyze potential portfolio purchases and to monitor existing portfolio
+      financial performance, leveraging Node.js, Express.js, Nunjucks, and Postgres
+    - Analyzed company portfolio to modify existing platform reflecting consumer and market trends
 # education:
-#   - institution: "University of Oklahoma"
-#     area: "Information Technology"
-#     studyType: "Bachelor"
-#     startDate: "2011-06-01"
-#     endDate: "2014-01-01"
-#     gpa: "4.0"
-#     courses:
-#       - "DB1101 - Basic SQL"
-#       - "CS2011 - Java Introduction"
+#   - institution: "Queens College"
+#     # area: "Information Technology"
+#     # studyType: "Bachelor"
+#     # startDate: "2011-06-01"
+#     endDate: "2003-01-01"
+#     # gpa: "4.0"
+#     # courses:
+#     #   - "DB1101 - Basic SQL"
+#     #   - "CS2011 - Java Introduction"
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
@@ -122,14 +111,20 @@ skills:
     # level: "Master"
     keywords:
       - "HTML"
-      - "CSS"
-      - "Javascript"
-      - "jQuery"
-      - "React"
-      - "Redux"
-      - "NodeJS"
-      - "ExpressJS"
+      - "JavaScript"
       - "Ruby on Rails"
+      - "Node.js"
+      - "Express.js"
+      - "jQuery"
+      - "React.js/Redux"
+      - "PostgreSQL"
+      - "MySQL"
+      - "MongoDB"
+      - "Python"
+      - "HTML5/CSS3"
+      - "AWS"
+      - "Visual Basic 6"
+      - "VBA"
   # - name: "Compression"
   #   # level: "Master"
   #   keywords:
@@ -139,14 +134,6 @@ skills:
 languages:
   - language: "English"
     fluency: "Native speaker"
-  - language: "Javascript"
-    fluency: "5/5"
-  - language: "Ruby"
-    fluency: "3/5"
-  - language: "SQL"
-    fluency: "4/5"
-  - language: "TypeScript"
-    fluency: "1/5"
 interests:
   - name: "Board Games"
     keywords:
@@ -159,7 +146,7 @@ interests:
       - "Cats"
   - name: "Drones"
     keywords:
-      - DJI Mavic Air 2
+      - "DJI Mavic Air 2"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >

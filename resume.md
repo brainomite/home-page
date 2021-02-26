@@ -19,4 +19,9 @@ right_column:
 no_language_icons: false
 no_skill_icons: true
 no_buttons: false
+buttons:
+  # print: true
+  pdf: /assets/Resume-Aaron_Young.pdf
+  # vcf: http://h2vx.com/vcf/<!--url-->
+  # json: /assets/resume.json
 ---
