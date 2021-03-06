@@ -106,12 +106,16 @@ There are four main caveats to be aware of when using WSL2
 
 ### install wsl1
 
-1. From an administrative powershell session run the following command, it'll
-enable features built into windows & it will auto reboot, be prepared
+1. From an administrative powershell session run the following command and it'll auto reboot when done.
+   it'll enable, if not already:
+   - Microsoft Windows Subsystem for Linux
+   - Virtual Machine Platform
+   - Hypervisor Platform
+   - Windows developer mode
 
     ```js
     // File: "install-wsl-1-and-reboot.ps"
-    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart; dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart; dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart; Restart-Computer
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"; dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart; dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart; dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart; Restart-Computer
     ```
 
 ### update wsl1 to wsl2
