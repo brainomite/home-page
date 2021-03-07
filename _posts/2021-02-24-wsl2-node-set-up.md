@@ -115,17 +115,103 @@ There are four main caveats to be aware of when using WSL2
 
     ```js
     // File: "install-wsl-1-and-reboot.ps"
-    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"; dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart; dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart; dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart; Restart-Computer
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+    dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart
+    Restart-Computer
     ```
 
-### update wsl1 to wsl2
-1. Download and install this
-   [WSL2 Linux kernel update package for x64 machines](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-2. Launch powershell terminal `wsl --set-default-version 2`
+### update wsl1 to wsl2 and install Ubuntu
+1. Launch powershell terminal as an administrator `wsl --set-default-version 2`
 
-### Install Ubuntu
+```powershell
+function Install-From-App-Store {
+[CmdletBinding()]
+param (
+  [string]$Uri,
+  [string]$Path = "."
+)
 
-1. From the Microsoft Store, download [Ubuntu 20.04 lts](https://www.microsoft.com/store/apps/9n6svws3rx71)
+  process {
+    if (-Not (Test-Path "C:\Support\Store")) {
+        New-Item -ItemType Directory -Force -Path "C:\Support\Store"
+    }
+
+    $progressPreference = 'silentlyContinue'
+
+    $StopWatch = [system.diagnostics.stopwatch]::startnew()
+    $Path = (Resolve-Path $Path).Path
+    #Get Urls to download
+    $WebResponse = Invoke-WebRequest -UseBasicParsing -Method 'POST' -Uri 'https://store.rg-adguard.net/api/GetFiles' -Body "type=url&url=$Uri&ring=Retail" -ContentType 'application/x-www-form-urlencoded'
+    $LinksMatch = ($WebResponse.Links | where {$_ -like '*.appx*'} | where {$_ -like '*_neutral_*' -or $_ -like "*_"+$env:PROCESSOR_ARCHITECTURE.Replace("AMD","X").Replace("IA","X")+"_*"} | Select-String -Pattern '(?<=a href=").+(?=" r)').matches.value
+    $Files = ($WebResponse.Links | where {$_ -like '*.appx*'} | where {$_ -like '*_neutral_*' -or $_ -like "*_"+$env:PROCESSOR_ARCHITECTURE.Replace("AMD","X").Replace("IA","X")+"_*"} | where {$_ } | Select-String -Pattern '(?<=noreferrer">).+(?=</a>)').matches.value
+    #Create array of links and filenames
+    $DownloadLinks = @()
+    for($i = 0;$i -lt $LinksMatch.Count; $i++){
+        $Array += ,@($LinksMatch[$i],$Files[$i])
+    }
+    #Sort by filename descending
+    $Array = $Array | sort-object @{Expression={$_[1]}; Descending=$True}
+    $LastFile = "temp123"
+    for($i = 0;$i -lt $LinksMatch.Count; $i++){
+        $CurrentFile = $Array[$i][1]
+        $CurrentUrl = $Array[$i][0]
+        #Find first number index of current and last processed filename
+        if ($CurrentFile -match "(?<number>\d)"){}
+        $FileIndex = $CurrentFile.indexof($Matches.number)
+        if ($LastFile -match "(?<number>\d)"){}
+        $LastFileIndex = $LastFile.indexof($Matches.number)
+
+        #If current filename product not equal to last filename product
+        if (($CurrentFile.SubString(0,$FileIndex-1)) -ne ($LastFile.SubString(0,$LastFileIndex-1))) {
+            #If file not already downloaded, add to the download queue
+            if (-Not (Test-Path "$Path\$CurrentFile")) {
+                "Downloading $Path\$CurrentFile"
+                $FilePath = "$Path\$CurrentFile"
+                $Downloaded = $CurrentFile
+                $FileRequest = Invoke-WebRequest -Uri $CurrentUrl -UseBasicParsing #-Method Head
+                [System.IO.File]::WriteAllBytes($FilePath, $FileRequest.content)
+            }
+        #Delete file outdated and already exist
+        }elseif ((Test-Path "$Path\$CurrentFile")) {
+            Remove-Item "$Path\$CurrentFile"
+            "Removing $Path\$CurrentFile"
+        }
+        $LastFile = $CurrentFile
+    }
+    "Time to process: "+$StopWatch.ElapsedMilliseconds/1000 + " seconds"
+
+    $progressPreference = 'Continue'
+    Add-AppxPackage -Path $Path\$Downloaded
+    cd $Path
+    rm $Downloaded
+  }
+}
+function install-wsl2 {
+    $progressPreference = 'silentlyContinue'
+    echo ""
+    Write-Host -ForegroundColor Green "Downloading wsl2"
+    Invoke-WebRequest -Uri "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi" -OutFile $env:USERPROFILE\Downloads\wsl_update_x64.msi
+    cd $env:USERPROFILE\Downloads
+    Write-Host -ForegroundColor Green "Installing wsl2"
+    .\wsl_update_x64.msi -passive
+    Write-Host -ForegroundColor Green "Waiting 10 seconds"
+    Start-Sleep -s 10
+    rm wsl_update_x64.msi
+    wsl --set-default-version 2
+    $progressPreference = 'Continue'
+}
+
+function Kick-It-Off {
+    # install-wsl2
+    Write-Host -ForegroundColor Green "Starting download of Ubuntu, this may take a few minutes its a sizeable download"
+    Install-From-Appx-Store "https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" "C:\Support\Store"
+    start powershell{ubuntu2004.exe}
+    Write-Host -ForegroundColor Green "Installation Completed"
+}
+Kick-It-Off
+```
 
 ### Setup Ubuntu
 

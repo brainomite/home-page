@@ -143,9 +143,7 @@ Comparison of Ligatures
 
 ## Themes
 
-My preferred theme is Lukin Theme.
-
-Some themes come with its own Icons and will override your selected icons. You
+Some themes come with its own icons and will override your selected icons. You
 can change it back after setting the theme if you want.
 {:.note}
 
@@ -166,8 +164,9 @@ To change your theme:
 
 #### [Dark Synthwave '84](https://marketplace.visualstudio.com/items?itemName=aaronYoung.dark-synthwave-vscode) with Glow Disabled
 
-This is a theme that your truly created. This is also my preferred theme,
+This is a theme that yours truly created. This is also my preferred theme,
 naturally
+{:.note}
 
 <div class="juxtapose">
   <img
