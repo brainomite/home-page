@@ -102,6 +102,8 @@ There are four main caveats to be aware of when using WSL2
    - Hypervisor Platform
    - Windows developer mode
 
+#### Install Script
+
     ```js
     // File: "install-wsl-1-and-reboot.ps"
     function start-script {
