@@ -17,13 +17,13 @@ image:
 Cover image credit to [ars Technica](https://arstechnica.com/information-technology/2020/03/the-windows-subsystem-for-linux-conference-was-a-virtual-success/)
 {:.figcaption}
 
-I was able to complete all of the steps from this post in ten minutes. That is
+I was able to complete all of the steps from this post in seven minutes. That is
 with a 300 Megabit internet connection. Depending on the speed of your computer
-and Internet connection it should take between 10 & 25 minutes to do the steps.
+and Internet connection it should take between 5 & 15 minutes to do the 3 steps.
 {:.note}
 
 
-1. this unordered seed list will be replaced by the toc
+1. this ordered seed list will be replaced by the toc
 {:toc}
 
 ## What we set up
@@ -34,17 +34,12 @@ and Internet connection it should take between 10 & 25 minutes to do the steps.
     - We will set git defaults
         - Git default name will be set to GitHub's Name
         - Git default name will be set to Github default email
-        - Git default starting branch will be changed to `main`
-        - Git's default editor will be set to VS Code
+        - Git default starting branch will be set to `main`
+        - Git default editor will be set to VS Code
     - We will install Node Version Manager (nvm)
     - We will use NVM to download the current LTS version of Node
-    - We will use NVM to update Node Package Manager (npm) to current version
     - We will install the VS Code WSL Server
-- Install and initially configure Windows Terminal
-    - We will override the terrible home folder default for Ubuntu 20.04, and
-       change it to the (~) path as is default for an Ubuntu session
-    - Optionally set Windows Terminal to use Ubuntu 20.04 as it's default
-       Terminal session
+- Install as needed VS Code extensions
 
 
 ## Caveats
@@ -66,18 +61,12 @@ There are four main caveats to be aware of when using WSL2
    within Ubuntu, you should
     1. Commit changes an push it up to GitHub from windows
     2. Within Ubuntu, git clone it to the folder of your liking.
-4. Tools within Ubuntu, like `create-react-app`'s `npm start` script will not
-   open your browser automatically like before. Simple ctrl-click the URL that
-   these tools typically display, and it'll open in the browser of your choice!
-   This method is confirmed to work in:
-    - VS Code
-    - Windows Terminal
 
 ## Video for steps
 
 <div class="youtube-container">
     <iframe
-        src="https://www.youtube.com/embed/wOZE4ErAStA"
+        src="https://www.youtube.com/embed/WBp70xPYk5Y"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
@@ -116,9 +105,10 @@ There are four main caveats to be aware of when using WSL2
     ```js
     // File: "install-wsl-1-and-reboot.ps"
     function start-script {
+        clear
         $Shell = New-Object -ComObject ("WScript.Shell")
-        $Favorite = $Shell.CreateShortcut($env:USERPROFILE + "\Desktop\install-wsl2-ubuntu.url")
-        $Favorite.TargetPath = "https://bed6cdacb967.ngrok.io/blog/2021-02-24-wsl2-node-set-up/#update-wsl1-to-wsl2-and-install-ubuntu";
+        $Favorite = $Shell.CreateShortcut($env:USERPROFILE + "\Desktop\wsl2.url")
+        $Favorite.TargetPath = "https://aaronyoung.dev/blog/2021-02-24-wsl2-node-set-up/#update-wsl1-to-wsl2-and-install-ubuntu";
         $Favorite.Save()
 
         reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
@@ -134,6 +124,8 @@ There are four main caveats to be aware of when using WSL2
 
 1. Launch powershell terminal as an administrator and run:
 
+#### install script
+
 ```powershell
 function Install-From-App-Store {
 [CmdletBinding()]
@@ -143,10 +135,6 @@ param (
 )
 
   process {
-    if (-Not (Test-Path "C:\Support\Store")) {
-        New-Item -ItemType Directory -Force -Path "C:\Support\Store"
-    }
-
     $progressPreference = 'silentlyContinue'
 
     $StopWatch = [system.diagnostics.stopwatch]::startnew()
@@ -199,7 +187,6 @@ param (
 }
 function install-wsl2 {
     $progressPreference = 'silentlyContinue'
-    echo ""
     Write-Host -ForegroundColor Green "Downloading wsl2"
     Invoke-WebRequest -Uri "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi" -OutFile $env:USERPROFILE\Downloads\wsl_update_x64.msi
     cd $env:USERPROFILE\Downloads
@@ -213,11 +200,14 @@ function install-wsl2 {
 }
 
 function Kick-It-Off {
+    clear
     install-wsl2
     Write-Host -ForegroundColor Green "Starting download of Ubuntu, this may take a few minutes as its a sizeable download"
-    Install-From-App-Store "https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" "C:\Support\Store"
+    Install-From-App-Store "https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" $env:USERPROFILE\Downloads
     start powershell{ubuntu2004.exe}
-    Write-Host -ForegroundColor Green "Installation Completed"
+    cd $env:USERPROFILE\Desktop\
+    rm wsl2.url
+    exit
 }
 Kick-It-Off
 ```
@@ -237,10 +227,11 @@ Feel free to read the comments that explain step by step what this script does.
 ```bash
 # file: "update-and-setup.sh"
 touch update-and-setup.sh && chmod u+x update-and-setup.sh && echo '
+clear # clear the screen
 # gather info
-echo Please enter your full name for GitHub:
+echo Please enter your full name for git:
 read name
-echo Please enter the email you wish to use with GitHub:
+echo Please enter the email you wish to use with git:
 read email
 echo
 
@@ -277,7 +268,6 @@ export NVM_DIR="$HOME/.nvm" # add NVM to the path
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # this loads bash completion for nvm
 nvm install --lts # install latest node LTS module
-nvm install-latest-npm # install latest version of node
 
 # install wsl extension for vs code https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode-remote.remote-wsl
@@ -289,9 +279,9 @@ code . # open VS Code for first time to install wsl server for VS Code
 # clean up after script
 
 rm update-and-setup.sh # cleaning up
-' >> update-and-setup.sh && ./update-and-setup.sh # run the script
+' >> update-and-setup.sh && ./update-and-setup.sh && exit # run the script then exit powershell's ubuntu
 ```
-### Windows Terminal
+<!-- ### Windows Terminal
 
 #### Setup
 
@@ -307,7 +297,7 @@ rm update-and-setup.sh # cleaning up
     but specifically I wanted to call out their section on
     [Panes](https://devblogs.microsoft.com/commandline/windows-terminal-tips-and-tricks/#panes)
 - [6 Tips for an Amazing Workflow With Windows Terminal and WSL2](https://medium.com/swlh/6-tips-for-an-awesome-workflow-with-windows-terminal-and-wsl2-c430306369df)
-  Start with Tip 2 as we already did 1.
+  Start with Tip 2 as we already did 1. -->
 
 
 
