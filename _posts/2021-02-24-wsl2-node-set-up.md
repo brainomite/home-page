@@ -115,15 +115,24 @@ There are four main caveats to be aware of when using WSL2
 
     ```js
     // File: "install-wsl-1-and-reboot.ps"
-    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
-    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-    dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart
-    Restart-Computer
+    function start-script {
+        $Shell = New-Object -ComObject ("WScript.Shell")
+        $Favorite = $Shell.CreateShortcut($env:USERPROFILE + "\Desktop\install-wsl2-ubuntu.url")
+        $Favorite.TargetPath = "https://bed6cdacb967.ngrok.io/blog/2021-02-24-wsl2-node-set-up/#update-wsl1-to-wsl2-and-install-ubuntu";
+        $Favorite.Save()
+
+        reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
+        dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+        dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+        dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart
+        Restart-Computer
+    }
+    start-script
     ```
 
 ### update wsl1 to wsl2 and install Ubuntu
-1. Launch powershell terminal as an administrator `wsl --set-default-version 2`
+
+1. Launch powershell terminal as an administrator and run:
 
 ```powershell
 function Install-From-App-Store {
@@ -180,7 +189,7 @@ param (
         }
         $LastFile = $CurrentFile
     }
-    "Time to process: "+$StopWatch.ElapsedMilliseconds/1000 + " seconds"
+    "Time to download: "+$StopWatch.ElapsedMilliseconds/1000 + " seconds"
 
     $progressPreference = 'Continue'
     Add-AppxPackage -Path $Path\$Downloaded
@@ -204,9 +213,9 @@ function install-wsl2 {
 }
 
 function Kick-It-Off {
-    # install-wsl2
-    Write-Host -ForegroundColor Green "Starting download of Ubuntu, this may take a few minutes its a sizeable download"
-    Install-From-Appx-Store "https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" "C:\Support\Store"
+    install-wsl2
+    Write-Host -ForegroundColor Green "Starting download of Ubuntu, this may take a few minutes as its a sizeable download"
+    Install-From-App-Store "https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71" "C:\Support\Store"
     start powershell{ubuntu2004.exe}
     Write-Host -ForegroundColor Green "Installation Completed"
 }
@@ -217,7 +226,7 @@ Kick-It-Off
 
 1. Open ubuntu 20.04 LTS and go through initial setup for the user & password
 2. Run the below shell script, which must be copied into the terminal in one
-   shot. While this is running move onto Installing
+   shot. While this is running, optionally move onto Installing
    [Windows Terminal](#windows-terminal)
 
 #### Install Script
