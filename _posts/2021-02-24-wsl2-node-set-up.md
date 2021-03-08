@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Dev environment with WSL2 and VS Code
+title: Setting up a JS Dev Env with WSL2, Ubuntu and VS Code
 description: >
   We are going go through the process of setting up Ubuntu on windows using the
   "Windows Subsystem for Linux 2" to work with Node, VS Code and Git.
