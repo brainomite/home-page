@@ -218,8 +218,7 @@ Kick-It-Off
 
 1. Open ubuntu 20.04 LTS and go through initial setup for the user & password
 2. Run the below shell script, which must be copied into the terminal in one
-   shot. While this is running, optionally move onto Installing
-   [Windows Terminal](#windows-terminal)
+   shot. It will ask you for your Ubuntu password.
 
 #### Install Script
 

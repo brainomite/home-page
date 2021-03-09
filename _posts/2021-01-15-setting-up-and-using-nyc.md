@@ -27,7 +27,7 @@ commit the reports, which can be regenerated on demand.
       1. This command presumes that mocha is run within the `test` script
    2. `"view-nyc-report": "npm run coverage && open coverage/index.html"`
       1. This will be utilized by users on mac or linux
-   3. `"view-nyc-win-report": "npm run coverage && start coverage/index.html`
+   3. `"view-nyc-win-report": "npm run coverage && start coverage/index.html"`
       1. This will be utilized by users on windows machines
 
 We separate coverage script from the view reports because there are other tools
