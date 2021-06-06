@@ -3,7 +3,7 @@
 # Change `author1` to your shortname.
 author1:
   name: Aaron Young
-  email: aaron.young@byfreeagency.com
+  email: hi@aaronyoung.dev
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -23,7 +23,7 @@ author1:
   # Rearrange to change the order in which they appear
   social:
     # twitter:         <username>
-    email: aaron.young@byfreeagency.com
+    email: hi@aaronyoung.dev
     github: brainomite
     rss: https://aaronyoung.dev/feed.xml
     # facebook:        <username>

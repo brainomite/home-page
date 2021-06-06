@@ -44,7 +44,7 @@ logo: /assets/img/logo.png
 author:
   # Used by `jekyll-feed`:
   name: Aaron Young
-  email: <aaron.young@byfreeagency.com>
+  email: <hi@aaronyoung.dev>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -370,7 +370,7 @@ plugins:
 
 author:
   social:
-    email:    aaron.young@byfreeagency.com
+    email:    hi@aaronyoung.dev
     rss:      https://aaronyoung.dev/feed.xml
 
 # Jekyll Compose Defaults
