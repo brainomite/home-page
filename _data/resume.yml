@@ -36,104 +36,159 @@ work:
     position: "Software Engineer"
     website: "https://auticon.us"
     startDate: "2021-4-19"
-    endDate: ""
-    summary: >
-      Consulting firm that embed Analysts and Engineers within company
+    endDate: "2022-01-04"
+    # summary: >
+    #   Consulting firm that embed Analysts and Engineers within company
     highlights:
-      - Serve as a SQL Data Engineer for one of the clients.
+      - Analyzed previously created queries to improve performance for loading
+        medical claims data using MS SQL and T-SQL, resulting in an average
+        improved T-SQL query performance of 66%.
+      - Led the creation of and taught an internal SQL course to train coworkers
+        utilizing MySQL, T-SQL, and Excel, supporting 200% team growth in a 3
+        month period.
+      - Developed internal tool to analyze 9,500+ SQL queries to determine
+        construction of fields using JavaScript, Electron, and T-SQL, increasing
+        efficiency for over 20 internal employees.
+      - Created Excel macro automations for initial hospital onboarding report
+        creation in VBA, T-SQL, and Excel, resulting in an increase in
+        efficiency of 95%.
+      - Collaborated with DOS Claims team to revamp their internal documentation
+        using MS Suite (Word, Teams, OneNote, Excel), leading to ability for
+        team members to easily locate correct information.
   - company: "Thinkful Online Learning"
     position: "Mentor"
     website: "https://thinkful.com"
     startDate: "2020-10-7"
     endDate: ""
-    summary: >
-      Online software development and product management bootcamp; subsidiary of Chegg ($CHGG).
+    # summary: >
+    #   Online software development and product management bootcamp; subsidiary of
+    #   Chegg ($CHGG).
     highlights:
-      - Serve as mentor to students, offering 1:1 video guidance for code improvements, project implementation,
-        review of complex technical concepts, & supplemental curriculum including HTML/CSS, Javascript,
-        Object-Oriented Programming, Node.JS, SQL, Express.JS and React.JS
-  - company: "Self-Employed – New York, NY"
-    position: "Web Developer"
-    startDate: "2018-3-1"
-    endDate: ""
-    summary: >
-      test?
-    highlights:
-      - Lead development of hotline phone system for service group network (Mutual Aid Society), leveraging
-        Airtable front-end, Node.js & Express.JS backend, & Twilio API to connect volunteers to callers
-      - Develop MVP for online disposable email service (Begone Email), leveraging RESTful API on backend,
-        custom SMTP server for email receive, and document storage via MongoDB
-      - Created NPM package utilizing Node.JS to create a CLI utility configuring ESLint & Prettier together
-      - Built AHEM monster to create disposable emails, eliminating spam from user’s inbox
+      - Mentored students 1:1 on JavaScript, React, Node.js, Express, SQL,
+        HTML5, and CSS3, as well as object oriented programming principles,
+        assisting 20+ individuals to re-skill in jobs as software engineers.S
   - company: "Stephen Einstein & Associates P.C. – New York, NY"
     position: "Software Engineer"
     startDate: "2002-5-1"
     endDate: "2017-10-1"
-    summary: >
-      Law firm specializing in creditor's rights and debt collection
+    # summary: >
+    #   Law firm specializing in creditor's rights and debt collection
     highlights:
-      - Oversaw all backend architecture and programming for financial and legal information database,
-        including asset + document management and cloud storage + backup
-      - Spearheaded database merger and network infrastructure integration following acquisition of rival law
-        firm, including physical server relocation and related IT infrastructure
-      - Developed research tool to enable quick look-up of statute-of-limitations laws, enabling legal teams to
-        evaluate ever-changing policies and avoid legal liability
-      - Launched proprietary automated dialer system, integrating with internal PBX phone system to
-        accommodate 24 simultaneous calls, improving productivity 50%+ and saving 80% in subscription fees
-      - Led development of automated document management system, allowing attorneys to quickly upload, tag,
-        and retrieve legal documents, increasing law-firm productivity by 400%
-      - Implemented Visual Basics 6 & MySQL-based proprietary document storage solution, reducing weekly
-        backup times from 76 hours to 10 hours on average
+      - Oversaw all backend architecture and programming for financial and legal information database, including asset and
+      document management and cloud storage and backup using AWS, Linux, VMWare, and MS Windows Servers,
+      supporting 100X growth over 15 year period.
+      - Spearheaded database migration and network infrastructure integration following acquisition of rival law firm,
+      including physical server relocation and related IT infrastructure.
+      - Launched proprietary automated dialer system, integrating with internal PBX phone system to accommodate 24
+      simultaneous calls, improving productivity 50%+ and saving over 80% in subscription fees.
+      - Led development of automated document management system using VB6 and MySQL, allowing attorneys to quickly
+      upload, tag, and retrieve legal documents, increasing law-firm productivity by 400%.
+      - Implemented using Visual Basics 6 and MySQL-based proprietary document storage solution, reducing weekly
+backup times from 76 hours to 10 hours on average.
   - company: "Pinpoint Technologies Too – New York, NY"
     position: "Software Engineer (Contract)"
-    startDate: "2002-5-1"
-    endDate: "2017-10-1"
-    summary: >
-      Debt buyer and collection agency
+    startDate: "2017-10-1"
+    endDate: "2021-04-1"
+    # summary: >
+    #   Debt buyer and collection agency
     highlights:
-    - Designed and operated tools to analyze potential portfolio purchases and to monitor existing portfolio
-      financial performance, leveraging Node.js, Express.js, Nunjucks, and Postgres
-    - Analyzed company portfolio to modify existing platform reflecting consumer and market trends
-# education:
-#   - institution: "Queens College"
-#     # area: "Information Technology"
-#     # studyType: "Bachelor"
-#     # startDate: "2011-06-01"
-#     endDate: "2003-01-01"
-#     # gpa: "4.0"
-#     # courses:
-#     #   - "DB1101 - Basic SQL"
-#     #   - "CS2011 - Java Introduction"
+      - Developed tool to determine potential portfolio purchases using JavaScript, Node.js, Express, PostgreSQL, and
+      Nunjucks, allowing partners to more efficiently determine portfolio values worth up to $35 million prior to purchase.
+      - Constructed system to monitor portfolio performance metrics utilizing JavaScript, Node.js, Express, Nunjucks, and
+      PostgreSQL, enabling portfolio managers to make a decision within 1 day to determine portfolio sell decisions.
+education:
+  - institution: "Queens College"
+    area: "Computer Science"
+    # studyType: "Bachelor"
+    # startDate: "2011-06-01"
+    # endDate: "2003-01-01"
+    # gpa: "4.0"
+    # courses:
+    #   - "DB1101 - Basic SQL"
+    #   - "CS2011 - Java Introduction"
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
 #     awarder: "Techcrunch"
 #     summary: "There is no spoon."
-# publications:
-#   - name: "Video compression for 3d media"
-#     publisher: "Hooli"
-#     releaseDate: "2014-10-01"
-#     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
-#     summary: "Innovative middle-out compression algorithm that changes the way we store data."
+publications:
+  - name: "Why you should use Yubico Authenticator for your Yubikey"
+    releaseDate: "2021-09-27"
+    website: "https://aaronyoungdev.medium.com/why-you-should-useyubico-authenticator-for-your-yubikey-9ac17a821682"
+    summary: "What is Yubico Authenticator and why should we use it?"
+  - name: "Using two fonts in VS Code: One for Emphasized Cursive"
+    releaseDate: "2021-01-21"
+    website: "https://aaronyoungdev.medium.com/using-two-fonts-in-vs-code-one-for-emphasized-cursive-bb19cb76ff38"
+    summary: "I give directions on using two fonts simultaneously in VS Code"
+  - name: "JS: How to create private class instance variables without using experimental features."
+    releaseDate: "2020-10-01"
+    website: "https://aaronyoungdev.medium.com/js-how-to-create-private-class-instance-variables-without-using-experimental-features-1403d28ec039"
+    summary: "I explain how to hide internal functions and variables that will not be available by the consumer of the class."
+  - name: "Tools for Seeding Databases in Node.js"
+    publisher: "Level Up Coding"
+    releaseDate: "2020-08-05"
+    website: "https://levelup.gitconnected.com/tools-for-seeding-databases-in-node-js-72fb2f6c7320"
+    summary: "Multiple tools for seeding a database for projects, personal and or professional."
+  - name: "How to Auto reload a full-stack JavaScript project using nodemon and webpack-dev-server together"
+    publisher: "ITNEXT"
+    releaseDate: "2018-02-28"
+    website: "https://itnext.io/auto-reload-a-full-stack-javascript-project-using-nodemon-and-webpack-dev-server-together-a636b271c4e"
+    summary: "Step by step instructions"
+  - name: "Why use ZSH?"
+    releaseDate: "2021-02-28"
+    website: "https://aaronyoung.dev/blog/2021-02-28-zsh-oh-my-zsh-setup/"
+    summary: "We are going go through the process of setting up ZSH and Oh My Zsh on Mac and WSL2’s Ubuntu 20.04"
+  - name: "Setting up a JS Dev Env with WSL2, Ubuntu and VS Code"
+    releaseDate: "2021-02-24"
+    website: "https://aaronyoung.dev/blog/2021-02-24-wsl2-node-set-up/"
+    summary: "We are going go through the process of setting up Ubuntu on windows using the “Windows Subsystem for Linux 2” to work with Node, VS Code and Git."
+  - name: "Configuring Git to Better our Lives"
+    releaseDate: "2021-01-28"
+    website: "https://aaronyoung.dev/blog/2021-01-28-configuring-git-to-better-our-lives/"
+    summary: "I give directions for setting up a git commit template & using VS Code for commit messages"
+  - name: "Styling VS Code"
+    releaseDate: "2021-01-24"
+    website: "https://aaronyoung.dev/blog/2021-01-24-vscode-fonts-and-themes/"
+    summary: "I provide fonts, icons, and themes for adjusting the look of VS Code"
+  - name: "Setting Up and Using NYC's HTML report"
+    releaseDate: "2021-01-15"
+    website: "https://aaronyoung.dev/blog/2021-01-15-setting-up-and-using-nyc/"
+    summary: "I show how to setup and use NYC’s HTML coverage report."
+  - name: "The case for system backups in addition to Git or another VCS"
+    releaseDate: "2018-02-24"
+    website: "https://aaronyoungdev.medium.com/the-case-for-system-backups-in-addition-to-git-or-another-vcs-1f3a54dc5ec5"
+    summary: "I go over what I believe is the best practices"
 skills:
-  - name: "Web Development"
-    # level: "Master"
+  - name: "Software Engineer"
+    level: "Proficient"
     keywords:
-      - "HTML"
       - "JavaScript"
-      - "Ruby on Rails"
+      - "React"
+      - "Redux"
       - "Node.js"
-      - "Express.js"
-      - "jQuery"
-      - "React.js/Redux"
+      - "Express"
+      - "SQL"
       - "PostgreSQL"
+      - "SQLite"
       - "MySQL"
-      - "MongoDB"
+      - "MS SQL"
+      - "Mocha"
+      - "Chai"
+      - "Sinon"
+      - "Heroku"
+      - "Git"
+  - name: "Software Engineer"
+    level: "Exposure"
+    keywords:
+      - "Ruby on Rails"
       - "Python"
-      - "HTML5/CSS3"
       - "AWS"
-      - "Visual Basic 6"
-      - "VBA"
+      - "MongoDB"
+      - "Firebase"
+      - "Travis CI"
+      - "Circle CI"
+      - "Jasmine"
+      - "Jest"
   # - name: "Compression"
   #   # level: "Master"
   #   keywords:
