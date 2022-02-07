@@ -1,5 +1,5 @@
 [build]
- command = "jekyll build"
+ command = "jekyll -- trace build"
  publish = "_site/"
 
 [build.environment]
