@@ -1,5 +1,5 @@
 [build]
- command = "gem install jekyll-trace && jekyll -- trace build"
+ command = "jekyll -- trace build"
  publish = "_site/"
 
 [build.environment]
