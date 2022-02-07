@@ -39,7 +39,7 @@ group :jekyll_plugins do
   gem "jekyll-include-cache", git: "https://github.com/hydecorp/jekyll-include-cache"
   gem "jekyll-last-modified-at"
   gem "jekyll-compose"
-  gem "jekyll-trace"
+  # gem "jekyll-trace"
 end
 
 gem 'wdm' if Gem.win_platform?
