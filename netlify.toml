@@ -1,7 +1,7 @@
 [build]
- command = "jekyll -- trace build"
+ command = "jekyll build --trace"
  publish = "_site/"
 
 [build.environment]
   JEKYLL_ENV = "production"
-  RUBY_VERSION = "2.7.1"
+  RUBY_VERSION = "2.6.2"
