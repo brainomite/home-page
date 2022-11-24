@@ -74,17 +74,11 @@ work:
     # summary: >
     #   Law firm specializing in creditor's rights and debt collection
     highlights:
-      - Oversaw all backend architecture and programming for financial and legal information database, including asset and
-      document management and cloud storage and backup using AWS, Linux, VMWare, and MS Windows Servers,
-      supporting 100X growth over 15 year period.
-      - Spearheaded database migration and network infrastructure integration following acquisition of rival law firm,
-      including physical server relocation and related IT infrastructure.
-      - Launched proprietary automated dialer system, integrating with internal PBX phone system to accommodate 24
-      simultaneous calls, improving productivity 50%+ and saving over 80% in subscription fees.
-      - Led development of automated document management system using VB6 and MySQL, allowing attorneys to quickly
-      upload, tag, and retrieve legal documents, increasing law-firm productivity by 400%.
-      - Implemented using Visual Basics 6 and MySQL-based proprietary document storage solution, reducing weekly
-backup times from 76 hours to 10 hours on average.
+      - Oversaw all backend architecture and programming for financial and legal information database, including asset and document management and cloud storage and backup using AWS, Linux, VMWare, and MS Windows Servers, supporting 100X growth over 15 year period.
+      - Spearheaded database migration and network infrastructure integration following acquisition of rival law firm, including physical server relocation and related IT infrastructure.
+      - Launched proprietary automated dialer system, integrating with internal PBX phone system to accommodate 24 simultaneous calls, improving productivity 50%+ and saving over 80% in subscription fees.
+      - Led development of automated document management system using VB6 and MySQL, allowing attorneys to quickly upload, tag, and retrieve legal documents, increasing law-firm productivity by 400%.
+      - Implemented using Visual Basics 6 and MySQL-based proprietary document storage solution, reducing weekly backup times from 76 hours to 10 hours on average.
   - company: "Pinpoint Technologies Too – New York, NY"
     position: "Software Engineer (Contract)"
     startDate: "2017-10-1"
@@ -92,10 +86,8 @@ backup times from 76 hours to 10 hours on average.
     # summary: >
     #   Debt buyer and collection agency
     highlights:
-      - Developed tool to determine potential portfolio purchases using JavaScript, Node.js, Express, PostgreSQL, and
-      Nunjucks, allowing partners to more efficiently determine portfolio values worth up to $35 million prior to purchase.
-      - Constructed system to monitor portfolio performance metrics utilizing JavaScript, Node.js, Express, Nunjucks, and
-      PostgreSQL, enabling portfolio managers to make a decision within 1 day to determine portfolio sell decisions.
+      - Developed tool to determine potential portfolio purchases using JavaScript, Node.js, Express, PostgreSQL, and Nunjucks, allowing partners to more efficiently determine portfolio values worth up to $35 million prior to purchase.
+      - Constructed system to monitor portfolio performance metrics utilizing JavaScript, Node.js, Express, Nunjucks, and PostgreSQL, enabling portfolio managers to make a decision within 1 day to determine portfolio sell decisions.
 education:
   - institution: "Queens College"
     area: "Computer Science"
