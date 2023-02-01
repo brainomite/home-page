@@ -86,3 +86,11 @@ or that problem will never be solved by science."
 
 Charles Darwin, "The Descent of Man" 
 {:.figcaption}
+
+"Life is not easy for any of us. But what of that? We must have perseverance and
+ above all confidence in ourselves. We must believe that we are gifted for 
+ something, and that this thing, at whatever cost, must be attained"
+{:.lead}
+
+Marie Curie
+{:.figcaption}
