@@ -94,3 +94,10 @@ Charles Darwin, "The Descent of Man"
 
 Marie Curie
 {:.figcaption}
+
+“...programming is more than an important practical art. It is also a gigantic
+ undertaking in the foundations of knowledge”
+{:.lead}
+
+Grace Hopper
+{:.figcaption}
