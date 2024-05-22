@@ -32,13 +32,33 @@ basics:
       username: "Aaron Young"
       url: "https://www.linkedin.com/in/aaron-young2018"
 work:
+  - company: "Thoughtworks Inc"
+    position: "Senior Software Engineer Consultant"
+    website: "https://www.thoughtworks.com/"
+    startDate: "2022-02-01"
+    endDate: "2024-04-30"
+    summary: >
+      A contracting firm that provides hybrid onsite and offsite teams -
+      Publicly traded $TWKS. Deployed to the United States Department of
+      Veterans Affairs
+    highlights:
+      - Worked closely with the client to build, using NodeJS/React/Ruby on
+        Rails, an AI-based web chatbot with various unique capabilities allowing
+        veterans to self-service
+      - Helped evolve the team to become a platform team to allow other teams to
+        onboard the chatbots they designed
+      - Worked on the team's GitHub actions
+      - Acted as Interim co-Tech Lead, the team's Security Champion, and
+        presenter in multiple lunch-and-learns
   - company: "auticon US"
     position: "Software Engineer"
     website: "https://auticon.us"
     startDate: "2021-4-19"
     endDate: "2022-01-04"
-    # summary: >
-    #   Consulting firm that embed Analysts and Engineers within company
+    summary: >
+      Consulting firm that embed Analysts and Engineers within companies.
+      Deployed to HealthCatalyst ($HCAT), a healthcare analytics firm, as a
+      client-facing Data Engineer
     highlights:
       - Analyzed previously created queries to improve performance for loading
         medical claims data using MS SQL and T-SQL, resulting in an average
@@ -59,10 +79,10 @@ work:
     position: "Mentor"
     website: "https://thinkful.com"
     startDate: "2020-10-7"
-    endDate: ""
-    # summary: >
-    #   Online software development and product management bootcamp; subsidiary of
-    #   Chegg ($CHGG).
+    endDate: "2023-1-1"
+    summary: >
+      Online software development and product management bootcamp; subsidiary of
+      Chegg ($CHGG).
     highlights:
       - Mentored students 1:1 on JavaScript, React, Node.js, Express, SQL,
         HTML5, and CSS3, as well as object oriented programming principles,
@@ -71,23 +91,40 @@ work:
     position: "Software Engineer"
     startDate: "2002-5-1"
     endDate: "2017-10-1"
-    # summary: >
-    #   Law firm specializing in creditor's rights and debt collection
+    summary: >
+      Law firm specializing in creditor's rights and debt collection
     highlights:
-      - Oversaw all backend architecture and programming for financial and legal information database, including asset and document management and cloud storage and backup using AWS, Linux, VMWare, and MS Windows Servers, supporting 100X growth over 15 year period.
-      - Spearheaded database migration and network infrastructure integration following acquisition of rival law firm, including physical server relocation and related IT infrastructure.
-      - Launched proprietary automated dialer system, integrating with internal PBX phone system to accommodate 24 simultaneous calls, improving productivity 50%+ and saving over 80% in subscription fees.
-      - Led development of automated document management system using VB6 and MySQL, allowing attorneys to quickly upload, tag, and retrieve legal documents, increasing law-firm productivity by 400%.
-      - Implemented using Visual Basics 6 and MySQL-based proprietary document storage solution, reducing weekly backup times from 76 hours to 10 hours on average.
-  - company: "Pinpoint Technologies Too – New York, NY"
+      - Oversaw all backend architecture and programming for financial and legal
+        information database, including asset and document management and cloud
+        storage and backup using AWS, Linux, VMWare, and MS Windows Servers,
+        supporting 100X growth over 15 year period.
+      - Spearheaded database migration and network infrastructure integration
+        following acquisition of rival law firm, including physical server
+        relocation and related IT infrastructure.
+      - Launched proprietary automated dialer system, integrating with internal
+        PBX phone system to accommodate 24 simultaneous calls, improving
+        productivity 50%+ and saving over 80% in subscription fees.
+      - Led development of automated document management system using VB6 and
+        MySQL, allowing attorneys to quickly upload, tag, and retrieve legal
+        documents, increasing law-firm productivity by 400%.
+      - Implemented using Visual Basics 6 and MySQL-based proprietary document
+        storage solution, reducing weekly backup times from 76 hours to 10 hours
+        on average.
+  - company: "Pinpoint Technologies Too - New York, NY"
     position: "Software Engineer (Contract)"
     startDate: "2017-10-1"
     endDate: "2021-04-1"
-    # summary: >
-    #   Debt buyer and collection agency
+    summary: >
+      Debt buyer and collection agency
     highlights:
-      - Developed tool to determine potential portfolio purchases using JavaScript, Node.js, Express, PostgreSQL, and Nunjucks, allowing partners to more efficiently determine portfolio values worth up to $35 million prior to purchase.
-      - Constructed system to monitor portfolio performance metrics utilizing JavaScript, Node.js, Express, Nunjucks, and PostgreSQL, enabling portfolio managers to make a decision within 1 day to determine portfolio sell decisions.
+      - Developed tool to determine potential portfolio purchases using
+        JavaScript, Node.js, Express, PostgreSQL, and Nunjucks, allowing
+        partners to more efficiently determine portfolio values worth up to $35
+        million prior to purchase.
+      - Constructed system to monitor portfolio performance metrics utilizing
+        JavaScript, Node.js, Express, Nunjucks, and PostgreSQL, enabling
+        portfolio managers to make a decision within 1 day to determine
+        portfolio sell decisions.
 education:
   - institution: "Queens College"
     area: "Computer Science"
@@ -112,16 +149,24 @@ publications:
     releaseDate: "2021-01-21"
     website: "https://aaronyoungdev.medium.com/using-two-fonts-in-vs-code-one-for-emphasized-cursive-bb19cb76ff38"
     summary: "I give directions on using two fonts simultaneously in VS Code"
-  - name: "JS: How to create private class instance variables without using experimental features."
+  - name:
+      "JS: How to create private class instance variables without using
+      experimental features."
     releaseDate: "2020-10-01"
     website: "https://aaronyoungdev.medium.com/js-how-to-create-private-class-instance-variables-without-using-experimental-features-1403d28ec039"
-    summary: "I explain how to hide internal functions and variables that will not be available by the consumer of the class."
+    summary:
+      "I explain how to hide internal functions and variables that will not be
+      available by the consumer of the class."
   - name: "Tools for Seeding Databases in Node.js"
     publisher: "Level Up Coding"
     releaseDate: "2020-08-05"
     website: "https://levelup.gitconnected.com/tools-for-seeding-databases-in-node-js-72fb2f6c7320"
-    summary: "Multiple tools for seeding a database for projects, personal and or professional."
-  - name: "How to Auto reload a full-stack JavaScript project using nodemon and webpack-dev-server together"
+    summary:
+      "Multiple tools for seeding a database for projects, personal and or
+      professional."
+  - name:
+      "How to Auto reload a full-stack JavaScript project using nodemon and
+      webpack-dev-server together"
     publisher: "ITNEXT"
     releaseDate: "2018-02-28"
     website: "https://itnext.io/auto-reload-a-full-stack-javascript-project-using-nodemon-and-webpack-dev-server-together-a636b271c4e"
@@ -129,19 +174,26 @@ publications:
   - name: "Why use ZSH?"
     releaseDate: "2021-02-28"
     website: "https://aaronyoung.dev/blog/2021-02-28-zsh-oh-my-zsh-setup/"
-    summary: "We are going go through the process of setting up ZSH and Oh My Zsh on Mac and WSL2’s Ubuntu 20.04"
+    summary:
+      "We are going go through the process of setting up ZSH and Oh My Zsh on
+      Mac and WSL2’s Ubuntu 20.04"
   - name: "Setting up a JS Dev Env with WSL2, Ubuntu and VS Code"
     releaseDate: "2021-02-24"
     website: "https://aaronyoung.dev/blog/2021-02-24-wsl2-node-set-up/"
-    summary: "We are going go through the process of setting up Ubuntu on windows using the “Windows Subsystem for Linux 2” to work with Node, VS Code and Git."
+    summary:
+      "We are going go through the process of setting up Ubuntu on windows using
+      the “Windows Subsystem for Linux 2” to work with Node, VS Code and Git."
   - name: "Configuring Git to Better our Lives"
     releaseDate: "2021-01-28"
     website: "https://aaronyoung.dev/blog/2021-01-28-configuring-git-to-better-our-lives/"
-    summary: "I give directions for setting up a git commit template & using VS Code for commit messages"
+    summary:
+      "I give directions for setting up a git commit template & using VS Code
+      for commit messages"
   - name: "Styling VS Code"
     releaseDate: "2021-01-24"
     website: "https://aaronyoung.dev/blog/2021-01-24-vscode-fonts-and-themes/"
-    summary: "I provide fonts, icons, and themes for adjusting the look of VS Code"
+    summary:
+      "I provide fonts, icons, and themes for adjusting the look of VS Code"
   - name: "Setting Up and Using NYC's HTML report"
     releaseDate: "2021-01-15"
     website: "https://aaronyoung.dev/blog/2021-01-15-setting-up-and-using-nyc/"
@@ -181,6 +233,7 @@ skills:
       - "Circle CI"
       - "Jasmine"
       - "Jest"
+      - "C#"
   # - name: "Compression"
   #   # level: "Master"
   #   keywords:
