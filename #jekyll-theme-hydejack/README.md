@@ -4,7 +4,9 @@
 
 A boutique Jekyll theme for hackers, nerds, and academics.  
 
+## Local dev
 
+run `bundle exec jekyll serve`
 
 
 

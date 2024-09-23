@@ -114,7 +114,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  jekyll (~> 4.1)
+  jekyll
   jekyll-compose
   jekyll-feed
   jekyll-include-cache!

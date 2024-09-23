@@ -32,8 +32,8 @@ basics:
       username: "Aaron Young"
       url: "https://www.linkedin.com/in/aaron-young2018"
 work:
-  - company: "Thoughtworks Inc"
-    position: "Senior Software Engineer Consultant"
+  - company: "Thoughtworks | US Dept. of Veteran Affairs"
+    position: "Senior Software Engineer"
     website: "https://www.thoughtworks.com/"
     startDate: "2022-02-01"
     endDate: "2024-04-30"
@@ -42,14 +42,25 @@ work:
       Publicly traded $TWKS. Deployed to the United States Department of
       Veterans Affairs
     highlights:
-      - Worked closely with the client to build, using NodeJS/React/Ruby on
-        Rails, an AI-based web chatbot with various unique capabilities allowing
-        veterans to self-service
-      - Helped evolve the team to become a platform team to allow other teams to
-        onboard the chatbots they designed
-      - Worked on the team's GitHub actions
-      - Acted as Interim co-Tech Lead, the team's Security Champion, and
-        presenter in multiple lunch-and-learns
+      - Served as a technical lead/anchor to deliver an AI-powered chatbot product on a federal site that supports 1.5 million
+        unique monthly US veteran users while maintaining a minimum of 80% test coverage. Onboarded and mentored new
+        team members of various experience levels. (React, Node.js, Ruby on Rails, Microsoft Azure SaaS, microservices)
+      - Established chatbot platform offerings across several lines of business. Designed and onboarded other teams to a
+        shared ecosystem of managing infrastructure and CI/CD release strategy using GitHub Actions. Created pro-code
+        and low-code processes for cross-team feature development during the AI boom.
+      - Led agile ceremonies, including iteration planning, lunch and learns, and tech debt prioritization
+      - Served as the team’s security champion.
+  - company: "Thinkful Online Learning"
+    position: "Fullstack Software Engineering Mentor"
+    website: "https://thinkful.com"
+    startDate: "2020-10-7"
+    endDate: "2023-1-1"
+    summary: >
+      Online software development and product management bootcamp; subsidiary of
+      Chegg ($CHGG).
+    highlights:
+      - Mentored students 1:1 on JavaScript, React, Node.js, Express, SQL, HTML5, and CSS3, as well as object-oriented
+        programming principles. Allows individuals to re-skill as software engineers.
   - company: "auticon US"
     position: "Software Engineer"
     website: "https://auticon.us"
@@ -60,56 +71,12 @@ work:
       Deployed to HealthCatalyst ($HCAT), a healthcare analytics firm, as a
       client-facing Data Engineer
     highlights:
-      - Analyzed previously created queries to improve performance for loading
-        medical claims data using MS SQL and T-SQL, resulting in an average
-        improved T-SQL query performance of 66%.
-      - Led the creation of and taught an internal SQL course to train coworkers
-        utilizing MySQL, T-SQL, and Excel, supporting 200% team growth in a 3
-        month period.
-      - Developed internal tool to analyze 9,500+ SQL queries to determine
-        construction of fields using JavaScript, Electron, and T-SQL, increasing
-        efficiency for over 20 internal employees.
-      - Created Excel macro automations for initial hospital onboarding report
-        creation in VBA, T-SQL, and Excel, resulting in an increase in
-        efficiency of 95%.
-      - Collaborated with DOS Claims team to revamp their internal documentation
-        using MS Suite (Word, Teams, OneNote, Excel), leading to ability for
-        team members to easily locate correct information.
-  - company: "Thinkful Online Learning"
-    position: "Mentor"
-    website: "https://thinkful.com"
-    startDate: "2020-10-7"
-    endDate: "2023-1-1"
-    summary: >
-      Online software development and product management bootcamp; subsidiary of
-      Chegg ($CHGG).
-    highlights:
-      - Mentored students 1:1 on JavaScript, React, Node.js, Express, SQL,
-        HTML5, and CSS3, as well as object oriented programming principles,
-        assisting 20+ individuals to re-skill in jobs as software engineers.S
-  - company: "Stephen Einstein & Associates P.C. – New York, NY"
-    position: "Software Engineer"
-    startDate: "2002-5-1"
-    endDate: "2017-10-1"
-    summary: >
-      Law firm specializing in creditor's rights and debt collection
-    highlights:
-      - Oversaw all backend architecture and programming for financial and legal
-        information database, including asset and document management and cloud
-        storage and backup using AWS, Linux, VMWare, and MS Windows Servers,
-        supporting 100X growth over 15 year period.
-      - Spearheaded database migration and network infrastructure integration
-        following acquisition of rival law firm, including physical server
-        relocation and related IT infrastructure.
-      - Launched proprietary automated dialer system, integrating with internal
-        PBX phone system to accommodate 24 simultaneous calls, improving
-        productivity 50%+ and saving over 80% in subscription fees.
-      - Led development of automated document management system using VB6 and
-        MySQL, allowing attorneys to quickly upload, tag, and retrieve legal
-        documents, increasing law-firm productivity by 400%.
-      - Implemented using Visual Basics 6 and MySQL-based proprietary document
-        storage solution, reducing weekly backup times from 76 hours to 10 hours
-        on average.
+      - Analyzed previously created queries to improve performance for loading medical claims data using MS SQL and
+        T-SQL, resulting in an average improved T-SQL query performance of 66%.
+      - Led the creation of and taught an internal SQL course to train coworkers utilizing MySQL, T-SQL, and Excel,
+        supporting 200% team growth in 3 months.
+      - Developed an internal tool to analyze 9,500+ SQL queries to determine the construction of fields using JavaScript,
+        Electron, and T-SQL, increasing efficiency for over 20 internal employees.
   - company: "Pinpoint Technologies Too - New York, NY"
     position: "Software Engineer (Contract)"
     startDate: "2017-10-1"
@@ -117,17 +84,27 @@ work:
     summary: >
       Debt buyer and collection agency
     highlights:
-      - Developed tool to determine potential portfolio purchases using
-        JavaScript, Node.js, Express, PostgreSQL, and Nunjucks, allowing
-        partners to more efficiently determine portfolio values worth up to $35
-        million prior to purchase.
-      - Constructed system to monitor portfolio performance metrics utilizing
-        JavaScript, Node.js, Express, Nunjucks, and PostgreSQL, enabling
-        portfolio managers to make a decision within 1 day to determine
-        portfolio sell decisions.
-education:
-  - institution: "Queens College"
-    area: "Computer Science"
+      - Developed a tool to determine potential portfolio purchases using JavaScript, Node.js, Express, PostgreSQL, and
+        Nunjucks, allowing partners to more efficiently assess portfolio values worth up to $35 million before purchase.
+      - Constructed a system to monitor portfolio performance metrics utilizing JavaScript, Node.js, Express, Nunjucks, and
+        PostgreSQL, enabling portfolio managers to decide within one day to determine portfolio sell decisions.
+  - company: "Stephen Einstein & Associates P.C. – New York, NY"
+    position: "Software Engineer"
+    startDate: "2002-5-1"
+    endDate: "2017-10-1"
+    summary: >
+      Law firm specializing in creditor's rights and debt collection
+    highlights:
+      - Oversaw all backend architecture and programming for financial and legal information database, including asset and
+        document management and cloud storage and backup using AWS, Linux, VMWare, and MS Windows Servers,
+        supporting 100X growth over 15 15-year period.
+      - Launched proprietary automated dialer system, integrating with internal PBX phone system to accommodate 24
+        simultaneous calls, improving productivity by 50%+ and saving over 80% in subscription fees.
+      - Implemented using Visual Basics 6 and MySQL-based proprietary document storage solution, reducing weekly backup
+        times from 76 to 10 hours on average.
+# education:
+#   - institution: "Queens College"
+#     area: "Computer Science"
     # studyType: "Bachelor"
     # startDate: "2011-06-01"
     # endDate: "2003-01-01"
@@ -140,68 +117,68 @@ education:
 #     date: "2014-11-01"
 #     awarder: "Techcrunch"
 #     summary: "There is no spoon."
-publications:
-  - name: "Why you should use Yubico Authenticator for your Yubikey"
-    releaseDate: "2021-09-27"
-    website: "https://aaronyoungdev.medium.com/why-you-should-useyubico-authenticator-for-your-yubikey-9ac17a821682"
-    summary: "What is Yubico Authenticator and why should we use it?"
-  - name: "Using two fonts in VS Code: One for Emphasized Cursive"
-    releaseDate: "2021-01-21"
-    website: "https://aaronyoungdev.medium.com/using-two-fonts-in-vs-code-one-for-emphasized-cursive-bb19cb76ff38"
-    summary: "I give directions on using two fonts simultaneously in VS Code"
-  - name:
-      "JS: How to create private class instance variables without using
-      experimental features."
-    releaseDate: "2020-10-01"
-    website: "https://aaronyoungdev.medium.com/js-how-to-create-private-class-instance-variables-without-using-experimental-features-1403d28ec039"
-    summary:
-      "I explain how to hide internal functions and variables that will not be
-      available by the consumer of the class."
-  - name: "Tools for Seeding Databases in Node.js"
-    publisher: "Level Up Coding"
-    releaseDate: "2020-08-05"
-    website: "https://levelup.gitconnected.com/tools-for-seeding-databases-in-node-js-72fb2f6c7320"
-    summary:
-      "Multiple tools for seeding a database for projects, personal and or
-      professional."
-  - name:
-      "How to Auto reload a full-stack JavaScript project using nodemon and
-      webpack-dev-server together"
-    publisher: "ITNEXT"
-    releaseDate: "2018-02-28"
-    website: "https://itnext.io/auto-reload-a-full-stack-javascript-project-using-nodemon-and-webpack-dev-server-together-a636b271c4e"
-    summary: "Step by step instructions"
-  - name: "Why use ZSH?"
-    releaseDate: "2021-02-28"
-    website: "https://aaronyoung.dev/blog/2021-02-28-zsh-oh-my-zsh-setup/"
-    summary:
-      "We are going go through the process of setting up ZSH and Oh My Zsh on
-      Mac and WSL2’s Ubuntu 20.04"
-  - name: "Setting up a JS Dev Env with WSL2, Ubuntu and VS Code"
-    releaseDate: "2021-02-24"
-    website: "https://aaronyoung.dev/blog/2021-02-24-wsl2-node-set-up/"
-    summary:
-      "We are going go through the process of setting up Ubuntu on windows using
-      the “Windows Subsystem for Linux 2” to work with Node, VS Code and Git."
-  - name: "Configuring Git to Better our Lives"
-    releaseDate: "2021-01-28"
-    website: "https://aaronyoung.dev/blog/2021-01-28-configuring-git-to-better-our-lives/"
-    summary:
-      "I give directions for setting up a git commit template & using VS Code
-      for commit messages"
-  - name: "Styling VS Code"
-    releaseDate: "2021-01-24"
-    website: "https://aaronyoung.dev/blog/2021-01-24-vscode-fonts-and-themes/"
-    summary:
-      "I provide fonts, icons, and themes for adjusting the look of VS Code"
-  - name: "Setting Up and Using NYC's HTML report"
-    releaseDate: "2021-01-15"
-    website: "https://aaronyoung.dev/blog/2021-01-15-setting-up-and-using-nyc/"
-    summary: "I show how to setup and use NYC’s HTML coverage report."
-  - name: "The case for system backups in addition to Git or another VCS"
-    releaseDate: "2018-02-24"
-    website: "https://aaronyoungdev.medium.com/the-case-for-system-backups-in-addition-to-git-or-another-vcs-1f3a54dc5ec5"
-    summary: "I go over what I believe is the best practices"
+# publications:
+#   - name: "Why you should use Yubico Authenticator for your Yubikey"
+#     releaseDate: "2021-09-27"
+#     website: "https://aaronyoungdev.medium.com/why-you-should-useyubico-authenticator-for-your-yubikey-9ac17a821682"
+#     summary: "What is Yubico Authenticator and why should we use it?"
+#   - name: "Using two fonts in VS Code: One for Emphasized Cursive"
+#     releaseDate: "2021-01-21"
+#     website: "https://aaronyoungdev.medium.com/using-two-fonts-in-vs-code-one-for-emphasized-cursive-bb19cb76ff38"
+#     summary: "I give directions on using two fonts simultaneously in VS Code"
+#   - name:
+#       "JS: How to create private class instance variables without using
+#       experimental features."
+#     releaseDate: "2020-10-01"
+#     website: "https://aaronyoungdev.medium.com/js-how-to-create-private-class-instance-variables-without-using-experimental-features-1403d28ec039"
+#     summary:
+#       "I explain how to hide internal functions and variables that will not be
+#       available by the consumer of the class."
+#   - name: "Tools for Seeding Databases in Node.js"
+#     publisher: "Level Up Coding"
+#     releaseDate: "2020-08-05"
+#     website: "https://levelup.gitconnected.com/tools-for-seeding-databases-in-node-js-72fb2f6c7320"
+#     summary:
+#       "Multiple tools for seeding a database for projects, personal and or
+#       professional."
+#   - name:
+#       "How to Auto reload a full-stack JavaScript project using nodemon and
+#       webpack-dev-server together"
+#     publisher: "ITNEXT"
+#     releaseDate: "2018-02-28"
+#     website: "https://itnext.io/auto-reload-a-full-stack-javascript-project-using-nodemon-and-webpack-dev-server-together-a636b271c4e"
+#     summary: "Step by step instructions"
+#   - name: "Why use ZSH?"
+#     releaseDate: "2021-02-28"
+#     website: "https://aaronyoung.dev/blog/2021-02-28-zsh-oh-my-zsh-setup/"
+#     summary:
+#       "We are going go through the process of setting up ZSH and Oh My Zsh on
+#       Mac and WSL2’s Ubuntu 20.04"
+#   - name: "Setting up a JS Dev Env with WSL2, Ubuntu and VS Code"
+#     releaseDate: "2021-02-24"
+#     website: "https://aaronyoung.dev/blog/2021-02-24-wsl2-node-set-up/"
+#     summary:
+#       "We are going go through the process of setting up Ubuntu on windows using
+#       the “Windows Subsystem for Linux 2” to work with Node, VS Code and Git."
+#   - name: "Configuring Git to Better our Lives"
+#     releaseDate: "2021-01-28"
+#     website: "https://aaronyoung.dev/blog/2021-01-28-configuring-git-to-better-our-lives/"
+#     summary:
+#       "I give directions for setting up a git commit template & using VS Code
+#       for commit messages"
+#   - name: "Styling VS Code"
+#     releaseDate: "2021-01-24"
+#     website: "https://aaronyoung.dev/blog/2021-01-24-vscode-fonts-and-themes/"
+#     summary:
+#       "I provide fonts, icons, and themes for adjusting the look of VS Code"
+#   - name: "Setting Up and Using NYC's HTML report"
+#     releaseDate: "2021-01-15"
+#     website: "https://aaronyoung.dev/blog/2021-01-15-setting-up-and-using-nyc/"
+#     summary: "I show how to setup and use NYC’s HTML coverage report."
+#   - name: "The case for system backups in addition to Git or another VCS"
+#     releaseDate: "2018-02-24"
+#     website: "https://aaronyoungdev.medium.com/the-case-for-system-backups-in-addition-to-git-or-another-vcs-1f3a54dc5ec5"
+#     summary: "I go over what I believe is the best practices"
 skills:
   - name: "Software Engineer"
     level: "Proficient"
@@ -221,7 +198,7 @@ skills:
       - "Sinon"
       - "Heroku"
       - "Git"
-  - name: "Software Engineer"
+  - name: "Senior Software Engineer"
     level: "Exposure"
     keywords:
       - "Ruby on Rails"
@@ -234,6 +211,7 @@ skills:
       - "Jasmine"
       - "Jest"
       - "C#"
+      - "SQL"
   # - name: "Compression"
   #   # level: "Master"
   #   keywords:
@@ -252,7 +230,6 @@ interests:
   - name: "Animals"
     keywords:
       - "Dogs"
-      - "Cats"
   - name: "Drones"
     keywords:
       - "DJI Mavic Air 2"
