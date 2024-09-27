@@ -11,7 +11,7 @@ My journey to where I am today began in High School where I learned Visual Basic
 
 Today I'm continuing my journey, leaving systems administration behind and moving forward having expanded my horizons with more tools recently while attending App Academy. I am looking forward to joining a firm where I can roll up my sleeves and get cracking on making the firm a better one.
 
-Here are just some of the technologies I am familiar with:
+Here are just some of the technologies I am familiar with:                     a                   b                   c    d
 
 <link
     rel="stylesheet"
