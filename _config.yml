@@ -56,8 +56,8 @@ menu:
     url: /portfolio/
   - title: Blog
     url: /blog/
-  - title: Résumé
-    url: /resume/
+  # - title: Résumé
+  #   url: /resume/
   - title: Schedule with me
     url: /calendly/
   - title: Collection of Quotes
@@ -321,7 +321,7 @@ include:
   - .well-known
   - LICENSE.md
   - _redirects
-  - ./resume/marquee.js
+  # - ./resume/marquee.js
 
 # Plugins
 # ----------------------------------------------------------------------------------------
